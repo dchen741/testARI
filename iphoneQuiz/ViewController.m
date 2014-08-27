@@ -15,12 +15,20 @@
 
 @implementation ViewController
 
+- (void)myButtonMethod
+{
+    //execute segue programmatically
+    [self performSegueWithIdentifier: @"loadSegue" sender: self];
+}
+
 - (void)viewDidLoad
 {
     //PFObject *testObject = [PFObject objectWithClassName:@"iPhoneQuizApp"];
     //[testObject saveInBackground];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [NSTimer scheduledTimerWithTimeInterval: 2 target: self selector: @selector(myButtonMethod) userInfo: nil repeats: NO];
+    
 }
 
 - (void)didReceiveMemoryWarning
