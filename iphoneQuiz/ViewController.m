@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad
 {
+    //PFObject *testObject = [PFObject objectWithClassName:@"iPhoneQuizApp"];
+    //[testObject saveInBackground];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
