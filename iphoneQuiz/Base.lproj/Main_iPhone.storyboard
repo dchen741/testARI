@@ -288,7 +288,7 @@ CQk
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDt-mk-dNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="1010"/>
+            <point key="canvasLocation" x="415" y="854"/>
         </scene>
         <!--Inish View Controller-->
         <scene sceneID="GOU-nC-fT2">
