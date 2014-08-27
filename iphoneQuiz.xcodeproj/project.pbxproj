@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9544817319AB05BC00F71FED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E7519808E97009C7775 /* Parse.framework */; };
+		B19CE225197CF5B50071379C /* ARI-LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE222197CF5B50071379C /* ARI-LOGO.png */; };
+		B19CE226197CF5B50071379C /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE223197CF5B50071379C /* checkmark.png */; };
+		B19CE227197CF5B50071379C /* xmark.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE224197CF5B50071379C /* xmark.png */; };
+		B19DC9F31982E76700A614D4 /* QuestionClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B19DC9F21982E76700A614D4 /* QuestionClass.m */; };
+		B19DC9F7198311C600A614D4 /* questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = B19DC9F6198311C600A614D4 /* questions.txt */; };
+		B1A5D9EE197F281400D66891 /* FInishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A5D9ED197F281400D66891 /* FInishViewController.m */; };
+		B1A65E7819808EE1009C7775 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E7719808EE1009C7775 /* AudioToolbox.framework */; };
+		B1A65E7A19808F22009C7775 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E7919808F22009C7775 /* CFNetwork.framework */; };
+		B1A65E7C19808F2B009C7775 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E7B19808F2B009C7775 /* CoreLocation.framework */; };
+		B1A65E7E19808F37009C7775 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E7D19808F37009C7775 /* libz.dylib */; };
+		B1A65E8019808F41009C7775 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E7F19808F41009C7775 /* MobileCoreServices.framework */; };
+		B1A65E8219808F4A009C7775 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E8119808F4A009C7775 /* QuartzCore.framework */; };
+		B1A65E8419808F53009C7775 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E8319808F53009C7775 /* Security.framework */; };
+		B1A65E8619808F5A009C7775 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E8519808F5A009C7775 /* StoreKit.framework */; };
+		B1A65E8819808F62009C7775 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E8719808F62009C7775 /* SystemConfiguration.framework */; };
+		B1AC8B0A197602880018DAD3 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8AF4197602880018DAD3 /* IQBarButtonItem.m */; };
+		B1AC8B0B197602880018DAD3 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8AF4197602880018DAD3 /* IQBarButtonItem.m */; };
+		B1AC8B0C197602880018DAD3 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1AC8AF5197602880018DAD3 /* IQKeyboardManager.bundle */; };
+		B1AC8B0D197602880018DAD3 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1AC8AF5197602880018DAD3 /* IQKeyboardManager.bundle */; };
+		B1AC8B0E197602880018DAD3 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8AF7197602880018DAD3 /* IQKeyboardManager.m */; };
+		B1AC8B0F197602880018DAD3 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8AF7197602880018DAD3 /* IQKeyboardManager.m */; };
+		B1AC8B10197602880018DAD3 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8AFB197602880018DAD3 /* IQNSArray+Sort.m */; };
+		B1AC8B11197602880018DAD3 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8AFB197602880018DAD3 /* IQNSArray+Sort.m */; };
+		B1AC8B12197602880018DAD3 /* IQSegmentedNextPrevious.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8AFD197602880018DAD3 /* IQSegmentedNextPrevious.m */; };
+		B1AC8B13197602880018DAD3 /* IQSegmentedNextPrevious.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8AFD197602880018DAD3 /* IQSegmentedNextPrevious.m */; };
+		B1AC8B14197602880018DAD3 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8AFF197602880018DAD3 /* IQTextView.m */; };
+		B1AC8B15197602880018DAD3 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8AFF197602880018DAD3 /* IQTextView.m */; };
+		B1AC8B16197602880018DAD3 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8B01197602880018DAD3 /* IQTitleBarButtonItem.m */; };
+		B1AC8B17197602880018DAD3 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8B01197602880018DAD3 /* IQTitleBarButtonItem.m */; };
+		B1AC8B18197602880018DAD3 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8B03197602880018DAD3 /* IQToolbar.m */; };
+		B1AC8B19197602880018DAD3 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8B03197602880018DAD3 /* IQToolbar.m */; };
+		B1AC8B1A197602880018DAD3 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8B05197602880018DAD3 /* IQUIView+Hierarchy.m */; };
+		B1AC8B1B197602880018DAD3 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8B05197602880018DAD3 /* IQUIView+Hierarchy.m */; };
+		B1AC8B1C197602880018DAD3 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8B07197602880018DAD3 /* IQUIView+IQKeyboardToolbar.m */; };
+		B1AC8B1D197602880018DAD3 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8B07197602880018DAD3 /* IQUIView+IQKeyboardToolbar.m */; };
+		B1AC8B1E197602880018DAD3 /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8B09197602880018DAD3 /* IQUIWindow+Hierarchy.m */; };
+		B1AC8B1F197602880018DAD3 /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC8B09197602880018DAD3 /* IQUIWindow+Hierarchy.m */; };
+		B1DD1AFC19731305009C2B6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DD1AFB19731305009C2B6E /* Foundation.framework */; };
+		B1DD1AFE19731305009C2B6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DD1AFD19731305009C2B6E /* CoreGraphics.framework */; };
+		B1DD1B0019731305009C2B6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DD1AFF19731305009C2B6E /* UIKit.framework */; };
+		B1DD1B0619731305009C2B6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1DD1B0419731305009C2B6E /* InfoPlist.strings */; };
+		B1DD1B0819731305009C2B6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DD1B0719731305009C2B6E /* main.m */; };
+		B1DD1B0C19731305009C2B6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DD1B0B19731305009C2B6E /* AppDelegate.m */; };
+		B1DD1B0F19731305009C2B6E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DD1B0D19731305009C2B6E /* Main_iPhone.storyboard */; };
+		B1DD1B1219731305009C2B6E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DD1B1019731305009C2B6E /* Main_iPad.storyboard */; };
+		B1DD1B1519731305009C2B6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DD1B1419731305009C2B6E /* ViewController.m */; };
+		B1DD1B1719731305009C2B6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DD1B1619731305009C2B6E /* Images.xcassets */; };
+		B1DD1B1E19731305009C2B6E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DD1B1D19731305009C2B6E /* XCTest.framework */; };
+		B1DD1B1F19731305009C2B6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DD1AFB19731305009C2B6E /* Foundation.framework */; };
+		B1DD1B2019731305009C2B6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DD1AFF19731305009C2B6E /* UIKit.framework */; };
+		B1DD1B2819731305009C2B6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1DD1B2619731305009C2B6E /* InfoPlist.strings */; };
+		B1DD1B2A19731305009C2B6E /* iphoneQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DD1B2919731305009C2B6E /* iphoneQuizTests.m */; };
+		B1DD1B3819731935009C2B6E /* questionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DD1B3719731935009C2B6E /* questionViewController.m */; };
+		B1DD1B3B19733C1D009C2B6E /* questionCorrectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DD1B3A19733C1D009C2B6E /* questionCorrectViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1DD1B2119731305009C2B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1DD1AF019731305009C2B6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1DD1AF719731305009C2B6E;
+			remoteInfo = iphoneQuiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B19CE222197CF5B50071379C /* ARI-LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ARI-LOGO.png"; path = "images/ARI-LOGO.png"; sourceTree = "<group>"; };
+		B19CE223197CF5B50071379C /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark.png; path = images/checkmark.png; sourceTree = "<group>"; };
+		B19CE224197CF5B50071379C /* xmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xmark.png; path = images/xmark.png; sourceTree = "<group>"; };
+		B19DC9F11982E76700A614D4 /* QuestionClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionClass.h; sourceTree = "<group>"; };
+		B19DC9F21982E76700A614D4 /* QuestionClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionClass.m; sourceTree = "<group>"; };
+		B19DC9F6198311C600A614D4 /* questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = questions.txt; sourceTree = "<group>"; };
+		B1A5D9EC197F281400D66891 /* FInishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FInishViewController.h; sourceTree = "<group>"; };
+		B1A5D9ED197F281400D66891 /* FInishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FInishViewController.m; sourceTree = "<group>"; };
+		B1A65E7519808E97009C7775 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B1A65E7719808EE1009C7775 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B1A65E7919808F22009C7775 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B1A65E7B19808F2B009C7775 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B1A65E7D19808F37009C7775 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B1A65E7F19808F41009C7775 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B1A65E8119808F4A009C7775 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B1A65E8319808F53009C7775 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B1A65E8519808F5A009C7775 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B1A65E8719808F62009C7775 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B1AC8AF3197602880018DAD3 /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		B1AC8AF4197602880018DAD3 /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		B1AC8AF5197602880018DAD3 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		B1AC8AF6197602880018DAD3 /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		B1AC8AF7197602880018DAD3 /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		B1AC8AF8197602880018DAD3 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		B1AC8AF9197602880018DAD3 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		B1AC8AFA197602880018DAD3 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		B1AC8AFB197602880018DAD3 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		B1AC8AFC197602880018DAD3 /* IQSegmentedNextPrevious.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSegmentedNextPrevious.h; sourceTree = "<group>"; };
+		B1AC8AFD197602880018DAD3 /* IQSegmentedNextPrevious.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSegmentedNextPrevious.m; sourceTree = "<group>"; };
+		B1AC8AFE197602880018DAD3 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		B1AC8AFF197602880018DAD3 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		B1AC8B00197602880018DAD3 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		B1AC8B01197602880018DAD3 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		B1AC8B02197602880018DAD3 /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		B1AC8B03197602880018DAD3 /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		B1AC8B04197602880018DAD3 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		B1AC8B05197602880018DAD3 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		B1AC8B06197602880018DAD3 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		B1AC8B07197602880018DAD3 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		B1AC8B08197602880018DAD3 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		B1AC8B09197602880018DAD3 /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		B1DD1AF819731305009C2B6E /* iphoneQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iphoneQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DD1AFB19731305009C2B6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1DD1AFD19731305009C2B6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1DD1AFF19731305009C2B6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1DD1B0319731305009C2B6E /* iphoneQuiz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iphoneQuiz-Info.plist"; sourceTree = "<group>"; };
+		B1DD1B0519731305009C2B6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1DD1B0719731305009C2B6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1DD1B0919731305009C2B6E /* iphoneQuiz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iphoneQuiz-Prefix.pch"; sourceTree = "<group>"; };
+		B1DD1B0A19731305009C2B6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1DD1B0B19731305009C2B6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1DD1B0E19731305009C2B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B1DD1B1119731305009C2B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B1DD1B1319731305009C2B6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B1DD1B1419731305009C2B6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B1DD1B1619731305009C2B6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B1DD1B1C19731305009C2B6E /* iphoneQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iphoneQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DD1B1D19731305009C2B6E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B1DD1B2519731305009C2B6E /* iphoneQuizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iphoneQuizTests-Info.plist"; sourceTree = "<group>"; };
+		B1DD1B2719731305009C2B6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1DD1B2919731305009C2B6E /* iphoneQuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iphoneQuizTests.m; sourceTree = "<group>"; };
+		B1DD1B3619731935009C2B6E /* questionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = questionViewController.h; sourceTree = "<group>"; };
+		B1DD1B3719731935009C2B6E /* questionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = questionViewController.m; sourceTree = "<group>"; };
+		B1DD1B3919733C1D009C2B6E /* questionCorrectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = questionCorrectViewController.h; sourceTree = "<group>"; };
+		B1DD1B3A19733C1D009C2B6E /* questionCorrectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = questionCorrectViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1DD1AF519731305009C2B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9544817319AB05BC00F71FED /* Parse.framework in Frameworks */,
+				B1A65E8819808F62009C7775 /* SystemConfiguration.framework in Frameworks */,
+				B1A65E8619808F5A009C7775 /* StoreKit.framework in Frameworks */,
+				B1A65E8419808F53009C7775 /* Security.framework in Frameworks */,
+				B1A65E8219808F4A009C7775 /* QuartzCore.framework in Frameworks */,
+				B1A65E8019808F41009C7775 /* MobileCoreServices.framework in Frameworks */,
+				B1A65E7E19808F37009C7775 /* libz.dylib in Frameworks */,
+				B1A65E7C19808F2B009C7775 /* CoreLocation.framework in Frameworks */,
+				B1A65E7A19808F22009C7775 /* CFNetwork.framework in Frameworks */,
+				B1DD1AFE19731305009C2B6E /* CoreGraphics.framework in Frameworks */,
+				B1A65E7819808EE1009C7775 /* AudioToolbox.framework in Frameworks */,
+				B1DD1B0019731305009C2B6E /* UIKit.framework in Frameworks */,
+				B1DD1AFC19731305009C2B6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DD1B1919731305009C2B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1DD1B1E19731305009C2B6E /* XCTest.framework in Frameworks */,
+				B1DD1B2019731305009C2B6E /* UIKit.framework in Frameworks */,
+				B1DD1B1F19731305009C2B6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1AC8AF2197602880018DAD3 /* IQKeyBoardManager */ = {
+			isa = PBXGroup;
+			children = (
+				B1AC8AF3197602880018DAD3 /* IQBarButtonItem.h */,
+				B1AC8AF4197602880018DAD3 /* IQBarButtonItem.m */,
+				B1AC8AF5197602880018DAD3 /* IQKeyboardManager.bundle */,
+				B1AC8AF6197602880018DAD3 /* IQKeyboardManager.h */,
+				B1AC8AF7197602880018DAD3 /* IQKeyboardManager.m */,
+				B1AC8AF8197602880018DAD3 /* IQKeyboardManagerConstants.h */,
+				B1AC8AF9197602880018DAD3 /* IQKeyboardManagerConstantsInternal.h */,
+				B1AC8AFA197602880018DAD3 /* IQNSArray+Sort.h */,
+				B1AC8AFB197602880018DAD3 /* IQNSArray+Sort.m */,
+				B1AC8AFC197602880018DAD3 /* IQSegmentedNextPrevious.h */,
+				B1AC8AFD197602880018DAD3 /* IQSegmentedNextPrevious.m */,
+				B1AC8AFE197602880018DAD3 /* IQTextView.h */,
+				B1AC8AFF197602880018DAD3 /* IQTextView.m */,
+				B1AC8B00197602880018DAD3 /* IQTitleBarButtonItem.h */,
+				B1AC8B01197602880018DAD3 /* IQTitleBarButtonItem.m */,
+				B1AC8B02197602880018DAD3 /* IQToolbar.h */,
+				B1AC8B03197602880018DAD3 /* IQToolbar.m */,
+				B1AC8B04197602880018DAD3 /* IQUIView+Hierarchy.h */,
+				B1AC8B05197602880018DAD3 /* IQUIView+Hierarchy.m */,
+				B1AC8B06197602880018DAD3 /* IQUIView+IQKeyboardToolbar.h */,
+				B1AC8B07197602880018DAD3 /* IQUIView+IQKeyboardToolbar.m */,
+				B1AC8B08197602880018DAD3 /* IQUIWindow+Hierarchy.h */,
+				B1AC8B09197602880018DAD3 /* IQUIWindow+Hierarchy.m */,
+			);
+			path = IQKeyBoardManager;
+			sourceTree = "<group>";
+		};
+		B1DD1AEF19731305009C2B6E = {
+			isa = PBXGroup;
+			children = (
+				B1AC8AF2197602880018DAD3 /* IQKeyBoardManager */,
+				B1DD1B0119731305009C2B6E /* iphoneQuiz */,
+				B1DD1B2319731305009C2B6E /* iphoneQuizTests */,
+				B1DD1AFA19731305009C2B6E /* Frameworks */,
+				B1DD1AF919731305009C2B6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1DD1AF919731305009C2B6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1DD1AF819731305009C2B6E /* iphoneQuiz.app */,
+				B1DD1B1C19731305009C2B6E /* iphoneQuizTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1DD1AFA19731305009C2B6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1A65E8719808F62009C7775 /* SystemConfiguration.framework */,
+				B1A65E8519808F5A009C7775 /* StoreKit.framework */,
+				B1A65E8319808F53009C7775 /* Security.framework */,
+				B1A65E8119808F4A009C7775 /* QuartzCore.framework */,
+				B1A65E7F19808F41009C7775 /* MobileCoreServices.framework */,
+				B1A65E7D19808F37009C7775 /* libz.dylib */,
+				B1A65E7B19808F2B009C7775 /* CoreLocation.framework */,
+				B1A65E7919808F22009C7775 /* CFNetwork.framework */,
+				B1A65E7719808EE1009C7775 /* AudioToolbox.framework */,
+				B1A65E7519808E97009C7775 /* Parse.framework */,
+				B1DD1AFB19731305009C2B6E /* Foundation.framework */,
+				B1DD1AFD19731305009C2B6E /* CoreGraphics.framework */,
+				B1DD1AFF19731305009C2B6E /* UIKit.framework */,
+				B1DD1B1D19731305009C2B6E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1DD1B0119731305009C2B6E /* iphoneQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				B19CE222197CF5B50071379C /* ARI-LOGO.png */,
+				B19CE223197CF5B50071379C /* checkmark.png */,
+				B19CE224197CF5B50071379C /* xmark.png */,
+				B19DC9F11982E76700A614D4 /* QuestionClass.h */,
+				B19DC9F21982E76700A614D4 /* QuestionClass.m */,
+				B1DD1B0A19731305009C2B6E /* AppDelegate.h */,
+				B1DD1B0B19731305009C2B6E /* AppDelegate.m */,
+				B1DD1B0D19731305009C2B6E /* Main_iPhone.storyboard */,
+				B1DD1B1019731305009C2B6E /* Main_iPad.storyboard */,
+				B1DD1B1319731305009C2B6E /* ViewController.h */,
+				B1DD1B1419731305009C2B6E /* ViewController.m */,
+				B1DD1B3619731935009C2B6E /* questionViewController.h */,
+				B1DD1B3719731935009C2B6E /* questionViewController.m */,
+				B1DD1B3919733C1D009C2B6E /* questionCorrectViewController.h */,
+				B1DD1B3A19733C1D009C2B6E /* questionCorrectViewController.m */,
+				B1A5D9EC197F281400D66891 /* FInishViewController.h */,
+				B1A5D9ED197F281400D66891 /* FInishViewController.m */,
+				B1DD1B1619731305009C2B6E /* Images.xcassets */,
+				B1DD1B0219731305009C2B6E /* Supporting Files */,
+			);
+			path = iphoneQuiz;
+			sourceTree = "<group>";
+		};
+		B1DD1B0219731305009C2B6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B19DC9F6198311C600A614D4 /* questions.txt */,
+				B1DD1B0319731305009C2B6E /* iphoneQuiz-Info.plist */,
+				B1DD1B0419731305009C2B6E /* InfoPlist.strings */,
+				B1DD1B0719731305009C2B6E /* main.m */,
+				B1DD1B0919731305009C2B6E /* iphoneQuiz-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1DD1B2319731305009C2B6E /* iphoneQuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1DD1B2919731305009C2B6E /* iphoneQuizTests.m */,
+				B1DD1B2419731305009C2B6E /* Supporting Files */,
+			);
+			path = iphoneQuizTests;
+			sourceTree = "<group>";
+		};
+		B1DD1B2419731305009C2B6E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1DD1B2519731305009C2B6E /* iphoneQuizTests-Info.plist */,
+				B1DD1B2619731305009C2B6E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1DD1AF719731305009C2B6E /* iphoneQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1DD1B2D19731305009C2B6E /* Build configuration list for PBXNativeTarget "iphoneQuiz" */;
+			buildPhases = (
+				B1DD1AF419731305009C2B6E /* Sources */,
+				B1DD1AF519731305009C2B6E /* Frameworks */,
+				B1DD1AF619731305009C2B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iphoneQuiz;
+			productName = iphoneQuiz;
+			productReference = B1DD1AF819731305009C2B6E /* iphoneQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1DD1B1B19731305009C2B6E /* iphoneQuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1DD1B3019731305009C2B6E /* Build configuration list for PBXNativeTarget "iphoneQuizTests" */;
+			buildPhases = (
+				B1DD1B1819731305009C2B6E /* Sources */,
+				B1DD1B1919731305009C2B6E /* Frameworks */,
+				B1DD1B1A19731305009C2B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1DD1B2219731305009C2B6E /* PBXTargetDependency */,
+			);
+			name = iphoneQuizTests;
+			productName = iphoneQuizTests;
+			productReference = B1DD1B1C19731305009C2B6E /* iphoneQuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1DD1AF019731305009C2B6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ivan Seto";
+				TargetAttributes = {
+					B1DD1B1B19731305009C2B6E = {
+						TestTargetID = B1DD1AF719731305009C2B6E;
+					};
+				};
+			};
+			buildConfigurationList = B1DD1AF319731305009C2B6E /* Build configuration list for PBXProject "iphoneQuiz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = B1DD1AEF19731305009C2B6E;
+			productRefGroup = B1DD1AF919731305009C2B6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1DD1AF719731305009C2B6E /* iphoneQuiz */,
+				B1DD1B1B19731305009C2B6E /* iphoneQuizTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1DD1AF619731305009C2B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1AC8B0C197602880018DAD3 /* IQKeyboardManager.bundle in Resources */,
+				B19DC9F7198311C600A614D4 /* questions.txt in Resources */,
+				B19CE225197CF5B50071379C /* ARI-LOGO.png in Resources */,
+				B1DD1B1219731305009C2B6E /* Main_iPad.storyboard in Resources */,
+				B19CE226197CF5B50071379C /* checkmark.png in Resources */,
+				B1DD1B1719731305009C2B6E /* Images.xcassets in Resources */,
+				B1DD1B0F19731305009C2B6E /* Main_iPhone.storyboard in Resources */,
+				B1DD1B0619731305009C2B6E /* InfoPlist.strings in Resources */,
+				B19CE227197CF5B50071379C /* xmark.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DD1B1A19731305009C2B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1AC8B0D197602880018DAD3 /* IQKeyboardManager.bundle in Resources */,
+				B1DD1B2819731305009C2B6E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1DD1AF419731305009C2B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1AC8B10197602880018DAD3 /* IQNSArray+Sort.m in Sources */,
+				B1A5D9EE197F281400D66891 /* FInishViewController.m in Sources */,
+				B1DD1B1519731305009C2B6E /* ViewController.m in Sources */,
+				B1AC8B12197602880018DAD3 /* IQSegmentedNextPrevious.m in Sources */,
+				B1AC8B1C197602880018DAD3 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				B1AC8B14197602880018DAD3 /* IQTextView.m in Sources */,
+				B19DC9F31982E76700A614D4 /* QuestionClass.m in Sources */,
+				B1AC8B1A197602880018DAD3 /* IQUIView+Hierarchy.m in Sources */,
+				B1AC8B0E197602880018DAD3 /* IQKeyboardManager.m in Sources */,
+				B1DD1B3B19733C1D009C2B6E /* questionCorrectViewController.m in Sources */,
+				B1AC8B0A197602880018DAD3 /* IQBarButtonItem.m in Sources */,
+				B1DD1B0C19731305009C2B6E /* AppDelegate.m in Sources */,
+				B1DD1B3819731935009C2B6E /* questionViewController.m in Sources */,
+				B1AC8B16197602880018DAD3 /* IQTitleBarButtonItem.m in Sources */,
+				B1AC8B1E197602880018DAD3 /* IQUIWindow+Hierarchy.m in Sources */,
+				B1DD1B0819731305009C2B6E /* main.m in Sources */,
+				B1AC8B18197602880018DAD3 /* IQToolbar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DD1B1819731305009C2B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1AC8B11197602880018DAD3 /* IQNSArray+Sort.m in Sources */,
+				B1AC8B1D197602880018DAD3 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				B1AC8B17197602880018DAD3 /* IQTitleBarButtonItem.m in Sources */,
+				B1AC8B1F197602880018DAD3 /* IQUIWindow+Hierarchy.m in Sources */,
+				B1AC8B15197602880018DAD3 /* IQTextView.m in Sources */,
+				B1AC8B19197602880018DAD3 /* IQToolbar.m in Sources */,
+				B1AC8B0F197602880018DAD3 /* IQKeyboardManager.m in Sources */,
+				B1AC8B0B197602880018DAD3 /* IQBarButtonItem.m in Sources */,
+				B1AC8B13197602880018DAD3 /* IQSegmentedNextPrevious.m in Sources */,
+				B1AC8B1B197602880018DAD3 /* IQUIView+Hierarchy.m in Sources */,
+				B1DD1B2A19731305009C2B6E /* iphoneQuizTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1DD1B2219731305009C2B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1DD1AF719731305009C2B6E /* iphoneQuiz */;
+			targetProxy = B1DD1B2119731305009C2B6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1DD1B0419731305009C2B6E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1DD1B0519731305009C2B6E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1DD1B0D19731305009C2B6E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1DD1B0E19731305009C2B6E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B1DD1B1019731305009C2B6E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1DD1B1119731305009C2B6E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B1DD1B2619731305009C2B6E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1DD1B2719731305009C2B6E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1DD1B2B19731305009C2B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1DD1B2C19731305009C2B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1DD1B2E19731305009C2B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ivanseto/Desktop/IQKeyboardManager-master/IQKeyboardManager",
+					Framework,
+					/Users/ivanseto/Desktop/iphoneQuiz,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iphoneQuiz/iphoneQuiz-Prefix.pch";
+				INFOPLIST_FILE = "iphoneQuiz/iphoneQuiz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B1DD1B2F19731305009C2B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ivanseto/Desktop/IQKeyboardManager-master/IQKeyboardManager",
+					Framework,
+					/Users/ivanseto/Desktop/iphoneQuiz,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iphoneQuiz/iphoneQuiz-Prefix.pch";
+				INFOPLIST_FILE = "iphoneQuiz/iphoneQuiz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B1DD1B3119731305009C2B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iphoneQuiz.app/iphoneQuiz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iphoneQuiz/iphoneQuiz-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iphoneQuizTests/iphoneQuizTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B1DD1B3219731305009C2B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iphoneQuiz.app/iphoneQuiz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iphoneQuiz/iphoneQuiz-Prefix.pch";
+				INFOPLIST_FILE = "iphoneQuizTests/iphoneQuizTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1DD1AF319731305009C2B6E /* Build configuration list for PBXProject "iphoneQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1DD1B2B19731305009C2B6E /* Debug */,
+				B1DD1B2C19731305009C2B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1DD1B2D19731305009C2B6E /* Build configuration list for PBXNativeTarget "iphoneQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1DD1B2E19731305009C2B6E /* Debug */,
+				B1DD1B2F19731305009C2B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1DD1B3019731305009C2B6E /* Build configuration list for PBXNativeTarget "iphoneQuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1DD1B3119731305009C2B6E /* Debug */,
+				B1DD1B3219731305009C2B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1DD1AF019731305009C2B6E /* Project object */;
+}
