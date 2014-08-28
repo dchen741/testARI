@@ -23,8 +23,19 @@
 
 - (void)viewDidLoad
 {
-    //PFObject *testObject = [PFObject objectWithClassName:@"iPhoneQuizApp"];
-    //[testObject saveInBackground];
+    PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
+    [query whereKey:@"name" equalTo:@"Ivan"];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        if (!object) {
+            NSLog(@"The getFirstObject request failed.");
+            PFObject *testObject = [PFObject objectWithClassName:@"iPhoneQuizApp"];
+            testObject[@"name"] = @"newRow";
+            [testObject saveInBackground];
+        } else {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved the object.");
+        }
+    }];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [NSTimer scheduledTimerWithTimeInterval: 2 target: self selector: @selector(myButtonMethod) userInfo: nil repeats: NO];
