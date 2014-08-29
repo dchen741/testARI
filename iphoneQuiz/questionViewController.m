@@ -80,7 +80,7 @@
             [incorrectJOLArray removeObjectAtIndex:0];
             [iphoneApp removeObject:questionNumber forKey:@"incorrectAnswerArray"];
             iphoneApp[@"incorrectDateArray"] = incorrectDateArray;
-            iphoneApp[@"incorrectJOlArray"] = incorrectJOLArray;
+            iphoneApp[@"incorrectJOLArray"] = incorrectJOLArray;
             [iphoneApp saveInBackground];
         }
         else if (correctSize > 0){
@@ -92,7 +92,7 @@
             [correctJOLArray removeObjectAtIndex:0];
             [iphoneApp removeObject:questionNumber forKey:@"correctAnswerArray"];
             iphoneApp[@"correctDateArray"] = correctDateArray;
-            iphoneApp[@"correctJOlArray"] = correctJOLArray;
+            iphoneApp[@"correctJOLArray"] = correctJOLArray;
             [iphoneApp saveInBackground];
         }
         else {
