@@ -41,7 +41,7 @@
     NSArray * questionArray = [questionString componentsSeparatedByString:@"\n"];
     
     PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
-    [query getObjectInBackgroundWithId:@"OMh1TcTdO2" block:^(PFObject *iphoneApp, NSError *error) {
+    [query getObjectInBackgroundWithId:@"mbjJovYMop" block:^(PFObject *iphoneApp, NSError *error) {
         
         NSArray *correctDateArray = iphoneApp[@"correctDateArray"];
         NSArray *incorrectDateArray = iphoneApp[@"incorrectDateArray"];
