@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9544817319AB05BC00F71FED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E7519808E97009C7775 /* Parse.framework */; };
-		95DEA29019B59141009FA270 /* contestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DEA28F19B59141009FA270 /* contestViewController.m */; };
+		95AA2BC819B6BAC100E4DD8A /* contestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AA2BC719B6BAC100E4DD8A /* contestViewController.m */; };
 		B19CE225197CF5B50071379C /* ARI-LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE222197CF5B50071379C /* ARI-LOGO.png */; };
 		B19CE226197CF5B50071379C /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE223197CF5B50071379C /* checkmark.png */; };
 		B19CE227197CF5B50071379C /* xmark.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE224197CF5B50071379C /* xmark.png */; };
@@ -76,8 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		95DEA28E19B59141009FA270 /* contestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contestViewController.h; sourceTree = "<group>"; };
-		95DEA28F19B59141009FA270 /* contestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contestViewController.m; sourceTree = "<group>"; };
+		95AA2BC619B6BAC100E4DD8A /* contestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contestViewController.h; sourceTree = "<group>"; };
+		95AA2BC719B6BAC100E4DD8A /* contestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contestViewController.m; sourceTree = "<group>"; };
 		B19CE222197CF5B50071379C /* ARI-LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ARI-LOGO.png"; path = "images/ARI-LOGO.png"; sourceTree = "<group>"; };
 		B19CE223197CF5B50071379C /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark.png; path = images/checkmark.png; sourceTree = "<group>"; };
 		B19CE224197CF5B50071379C /* xmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xmark.png; path = images/xmark.png; sourceTree = "<group>"; };
@@ -270,8 +270,8 @@
 				B1DD1B3A19733C1D009C2B6E /* questionCorrectViewController.m */,
 				B1A5D9EC197F281400D66891 /* FInishViewController.h */,
 				B1A5D9ED197F281400D66891 /* FInishViewController.m */,
-				95DEA28E19B59141009FA270 /* contestViewController.h */,
-				95DEA28F19B59141009FA270 /* contestViewController.m */,
+				95AA2BC619B6BAC100E4DD8A /* contestViewController.h */,
+				95AA2BC719B6BAC100E4DD8A /* contestViewController.m */,
 				B1DD1B1619731305009C2B6E /* Images.xcassets */,
 				B1DD1B0219731305009C2B6E /* Supporting Files */,
 			);
@@ -416,7 +416,7 @@
 				B1AC8B10197602880018DAD3 /* IQNSArray+Sort.m in Sources */,
 				B1A5D9EE197F281400D66891 /* FInishViewController.m in Sources */,
 				B1DD1B1519731305009C2B6E /* ViewController.m in Sources */,
-				95DEA29019B59141009FA270 /* contestViewController.m in Sources */,
+				95AA2BC819B6BAC100E4DD8A /* contestViewController.m in Sources */,
 				B1AC8B12197602880018DAD3 /* IQSegmentedNextPrevious.m in Sources */,
 				B1AC8B1C197602880018DAD3 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				B1AC8B14197602880018DAD3 /* IQTextView.m in Sources */,

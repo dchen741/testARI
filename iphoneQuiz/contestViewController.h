@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 
-@interface contestViewController : NSObject
+@interface contestViewController : UIViewController
 
 @end

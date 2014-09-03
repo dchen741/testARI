@@ -258,10 +258,10 @@
             </objects>
             <point key="canvasLocation" x="415" y="854"/>
         </scene>
-        <!--View Controller-->
+        <!--Contest View Controller-->
         <scene sceneID="vcH-3k-ow7">
             <objects>
-                <viewController id="SLC-fg-kS3" sceneMemberID="viewController">
+                <viewController id="SLC-fg-kS3" customClass="contestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GXs-U0-4hg"/>
                         <viewControllerLayoutGuide type="bottom" id="try-BK-8R6"/>
@@ -351,7 +351,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hA7-8g-cPV"/>
+        <segue reference="iwG-BM-Tox"/>
         <segue reference="ow2-fT-hXJ"/>
     </inferredMetricsTieBreakers>
 </document>
