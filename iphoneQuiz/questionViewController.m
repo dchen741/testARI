@@ -71,7 +71,12 @@
         }
         NSLog(@"correct size %d",correctSize);
         
-        if (incorrectSize > 0){
+        
+        NSNumber *pendQuestion = iphoneApp[@"pendingQuestions"];
+        if ([pendQuestion intValue] > -1){
+            questionNumber = pendQuestion;
+        }
+        else if (incorrectSize > 0){
             NSMutableArray *incorrectAnswerArray = iphoneApp[@"incorrectAnswerArray"];
             NSMutableArray *incorrectDateArray = iphoneApp[@"incorrectDateArray"];
             NSMutableArray *incorrectJOLArray = iphoneApp[@"incorrectJOLArray"];
@@ -81,6 +86,7 @@
             [iphoneApp removeObject:questionNumber forKey:@"incorrectAnswerArray"];
             iphoneApp[@"incorrectDateArray"] = incorrectDateArray;
             iphoneApp[@"incorrectJOLArray"] = incorrectJOLArray;
+            iphoneApp[@"pendingQuestions"] = questionNumber;
             [iphoneApp saveInBackground];
         }
         else if (correctSize > 0){
@@ -93,6 +99,7 @@
             [iphoneApp removeObject:questionNumber forKey:@"correctAnswerArray"];
             iphoneApp[@"correctDateArray"] = correctDateArray;
             iphoneApp[@"correctJOLArray"] = correctJOLArray;
+            iphoneApp[@"pendingQuestions"] = questionNumber;
             [iphoneApp saveInBackground];
         }
         else {
@@ -100,6 +107,7 @@
             questionNumber = questionPoolArray[rnd];
             NSLog(@"remove %@",questionNumber);
             [iphoneApp removeObject:questionNumber forKey:@"questionPoolArray"];
+            iphoneApp[@"pendingQuestions"] = questionNumber;
             [iphoneApp saveInBackground];
         }
         
