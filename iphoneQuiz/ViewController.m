@@ -21,6 +21,10 @@
     [self performSegueWithIdentifier: @"loadSegue" sender: self];
 }
 
+- (IBAction)nextView:(id)sender {
+    [self myButtonMethod];
+}
+
 - (void)viewDidLoad
 {
     PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
@@ -38,7 +42,7 @@
     }];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [NSTimer scheduledTimerWithTimeInterval: 2 target: self selector: @selector(myButtonMethod) userInfo: nil repeats: NO];
+    //[NSTimer scheduledTimerWithTimeInterval: 2 target: self selector: @selector(myButtonMethod) userInfo: nil repeats: NO];
     
 }
 

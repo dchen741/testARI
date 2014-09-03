@@ -144,11 +144,13 @@
             [iphoneApp saveInBackground];
         }
         
-        if ((int)self.questionProgressBar.progress == 1){
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        currentQuestion = appDelegate.questionNumber;
+        if (currentQuestion == 5){
             [self performSegueWithIdentifier:@"finishSegue" sender:sender];
-            self.questionProgressBar.progress = 0;
-            AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-            appDelegate.questionNumber = 0;
+            //self.questionProgressBar.progress = 0;
+            //AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            //appDelegate.questionNumber = 0;
         }
         else {
             [self performSegueWithIdentifier:@"nextQuestionSegue" sender:sender];
@@ -209,7 +211,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.questionProgressBar.progress = self.progressBarFill + 0.2;
-    self.progressLabel.text = [NSString stringWithFormat:@"%i of 5 questions answered",(int)(self.questionProgressBar.progress * 5)];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    currentQuestion = appDelegate.questionNumber;
+    self.progressLabel.text = [NSString stringWithFormat:@"%i of 5 questions answered",currentQuestion];
     
     if (self.gotAnswerCorrect == true){
         self.correctWrongLabel.text = @"Correct";

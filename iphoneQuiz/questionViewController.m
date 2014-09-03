@@ -34,6 +34,7 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     currentQuestion = appDelegate.questionNumber;
     progressBarFill = (float) currentQuestion/5;
+
     self.progressLabel.text = [NSString stringWithFormat:@"%i of 5 questions answered",currentQuestion];
     self.questionProgressBar.progress = progressBarFill;
     appDelegate.questionNumber++;
