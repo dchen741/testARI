@@ -26,8 +26,9 @@
 }
 
 - (void)nextViewFunction:(id)sender{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
-    [query getObjectInBackgroundWithId:@"mbjJovYMop" block:^(PFObject *iphoneApp, NSError *error) {
+    [query getObjectInBackgroundWithId:appDelegate.rowID block:^(PFObject *iphoneApp, NSError *error) {
         iphoneApp[@"pendingQuestions"] = @-1;
         [iphoneApp saveInBackground];
         if (self.gotAnswerCorrect == true){
