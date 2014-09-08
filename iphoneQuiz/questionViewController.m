@@ -58,7 +58,6 @@
                 NSLog(@"onedayahead %@",oneDayAhead);
             }
         }
-        NSLog(@"incorrect size %d",incorrectSize);
         
         int correctSize=0;
         for (int i=0;i<[correctDateArray count];i++){
@@ -70,7 +69,6 @@
                 NSLog(@"3dayahead %@",threeDaysAhead);
             }
         }
-        NSLog(@"correct size %d",correctSize);
         
         
         NSNumber *pendQuestion = iphoneApp[@"pendingQuestions"];
@@ -91,7 +89,7 @@
             [iphoneApp saveInBackground];
         }
         else if (correctSize > 0){
-            NSMutableArray *correctDateArray = iphoneApp[@"incorrectDateArray"];
+            NSMutableArray *correctDateArray = iphoneApp[@"correctDateArray"];
             NSMutableArray *correctAnswerArray = iphoneApp[@"correctAnswerArray"];
             NSMutableArray *correctJOLArray = iphoneApp[@"correctJOLArray"];
             questionNumber = correctAnswerArray[0];
