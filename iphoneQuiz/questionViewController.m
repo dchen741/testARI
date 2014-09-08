@@ -81,6 +81,7 @@
             NSMutableArray *incorrectDateArray = iphoneApp[@"incorrectDateArray"];
             NSMutableArray *incorrectJOLArray = iphoneApp[@"incorrectJOLArray"];
             questionNumber = incorrectAnswerArray[0];
+            NSLog(@"remove %@ from incorrect",questionNumber);
             [incorrectDateArray removeObjectAtIndex:0];
             [incorrectJOLArray removeObjectAtIndex:0];
             [iphoneApp removeObject:questionNumber forKey:@"incorrectAnswerArray"];
@@ -94,6 +95,7 @@
             NSMutableArray *correctAnswerArray = iphoneApp[@"correctAnswerArray"];
             NSMutableArray *correctJOLArray = iphoneApp[@"correctJOLArray"];
             questionNumber = correctAnswerArray[0];
+            NSLog(@"remove %@ from correct",questionNumber);
             [correctDateArray removeObjectAtIndex:0];
             [correctJOLArray removeObjectAtIndex:0];
             [iphoneApp removeObject:questionNumber forKey:@"correctAnswerArray"];
@@ -105,7 +107,7 @@
         else {
             int rnd = arc4random()%[questionPoolArray count];
             questionNumber = questionPoolArray[rnd];
-            NSLog(@"remove %@",questionNumber);
+            NSLog(@"remove %@ from pool",questionNumber);
             [iphoneApp removeObject:questionNumber forKey:@"questionPoolArray"];
             iphoneApp[@"pendingQuestions"] = questionNumber;
             [iphoneApp saveInBackground];
