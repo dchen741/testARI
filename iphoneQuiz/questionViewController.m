@@ -75,6 +75,7 @@
         NSNumber *pendQuestion = iphoneApp[@"pendingQuestions"];
         if ([pendQuestion intValue] > -1){
             questionNumber = pendQuestion;
+            NSLog(@"pending %@",questionNumber);
         }
         else if (incorrectSize > 0){
             NSMutableArray *incorrectAnswerArray = iphoneApp[@"incorrectAnswerArray"];
