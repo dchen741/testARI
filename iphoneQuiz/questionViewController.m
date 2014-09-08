@@ -32,17 +32,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view."
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    currentQuestion = appDelegate.questionNumber;
-    progressBarFill = (float) currentQuestion/5;
-
-    self.progressLabel.text = [NSString stringWithFormat:@"%i of 5 questions answered",currentQuestion];
-    self.questionProgressBar.progress = progressBarFill;
-    appDelegate.questionNumber++;
+   //appDelegate.questionNumber++;
     NSString *questionString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"questions" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
     NSArray * questionArray = [questionString componentsSeparatedByString:@"\n"];
     
     PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
     [query getObjectInBackgroundWithId:appDelegate.rowID block:^(PFObject *iphoneApp, NSError *error) {
+        
+        NSNumber *questionsToday = iphoneApp[@"questionsToday"];
+        progressBarFill = (float) [questionsToday integerValue]/5;
+        
+        self.progressLabel.text = [NSString stringWithFormat:@"%i of 5 questions answered",[questionsToday integerValue]];
+        self.questionProgressBar.progress = progressBarFill;
         
         NSArray *correctDateArray = iphoneApp[@"correctDateArray"];
         NSArray *incorrectDateArray = iphoneApp[@"incorrectDateArray"];

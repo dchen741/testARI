@@ -9,12 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>{
-    int questionNumber;
     NSString *rowID;
 }
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, assign) int questionNumber;
 @property (strong,nonatomic) NSString *rowID;
 @property (nonatomic,retain) NSMutableArray *tempCorrect;
 @property (nonatomic,retain) NSMutableArray *tempIncorrect;

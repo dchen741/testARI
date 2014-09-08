@@ -11,7 +11,7 @@
 
 @implementation AppDelegate
 
-@synthesize questionNumber,tempCorrect,tempIncorrect,rowID;
+@synthesize tempCorrect,tempIncorrect,rowID;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

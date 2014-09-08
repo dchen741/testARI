@@ -58,15 +58,19 @@
                 AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
                 appDelegate.rowID = object.objectId;
                 NSLog(@"rowID %@",appDelegate.rowID);
+                PFQuery *query3 = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
+                [query3 getObjectInBackgroundWithId:appDelegate.rowID block:^(PFObject *iphoneApp, NSError *error) {
+                    iphoneApp[@"questionsToday"] = @0;
+                    [iphoneApp saveInBackground];
+                }];
             }
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
-
     
-	
+
     //[NSTimer scheduledTimerWithTimeInterval: 2 target: self selector: @selector(myButtonMethod) userInfo: nil repeats: NO];
     
 }
