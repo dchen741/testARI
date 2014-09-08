@@ -31,6 +31,7 @@
     [query getObjectInBackgroundWithId:appDelegate.rowID block:^(PFObject *iphoneApp, NSError *error) {
         iphoneApp[@"pendingQuestions"] = @-1;
         [iphoneApp saveInBackground];
+        [NSThread sleepForTimeInterval:1];
         if (self.gotAnswerCorrect == true){
             [iphoneApp addObject:self.questionNumber forKey:@"correctAnswerArray"];
             [iphoneApp addObject:self.JOL forKey:@"correctJOLArray"];

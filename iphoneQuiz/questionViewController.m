@@ -70,8 +70,8 @@
                 NSLog(@"3dayahead %@",threeDaysAhead);
             }
         }
-        
-        
+    
+        [NSThread sleepForTimeInterval:.2];
         NSNumber *pendQuestion = iphoneApp[@"pendingQuestions"];
         if ([pendQuestion intValue] > -1){
             questionNumber = pendQuestion;
