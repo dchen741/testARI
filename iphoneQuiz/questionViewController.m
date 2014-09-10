@@ -30,9 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view."
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-   //appDelegate.questionNumber++;
+    NSDate *estToday = [[NSDate date] dateByAddingTimeInterval:-60*60*5];
     NSString *questionString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"questions" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
     NSArray * questionArray = [questionString componentsSeparatedByString:@"\n"];
     
@@ -52,9 +51,9 @@
         int incorrectSize=0;
         for (int i=0;i<[incorrectDateArray count];i++){
             NSDate *oneDayAhead = incorrectDateArray[i];
-            oneDayAhead = [oneDayAhead dateByAddingTimeInterval:60*60*24];
-            //if threeDaysAhead is after today
-            if ([oneDayAhead compare:[NSDate date]] == NSOrderedAscending){
+            oneDayAhead = [oneDayAhead dateByAddingTimeInterval:60*60*19];
+            //if oneDayAhead is after today
+            if ([oneDayAhead compare:estToday] == NSOrderedAscending){
                 incorrectSize++;
                 NSLog(@"onedayahead %@",oneDayAhead);
             }
@@ -63,9 +62,9 @@
         int correctSize=0;
         for (int i=0;i<[correctDateArray count];i++){
             NSDate *threeDaysAhead = correctDateArray[i];
-            threeDaysAhead = [threeDaysAhead dateByAddingTimeInterval:60*60*24*3];
+            threeDaysAhead = [threeDaysAhead dateByAddingTimeInterval:(60*60*24*2 + 60*60*19)];
             //if threeDaysAhead is after today
-            if ([threeDaysAhead compare:[NSDate date]] == NSOrderedAscending){
+            if ([threeDaysAhead compare:estToday] == NSOrderedAscending){
                 correctSize++;
                 NSLog(@"3dayahead %@",threeDaysAhead);
             }

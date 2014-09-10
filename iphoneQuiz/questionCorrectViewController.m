@@ -29,13 +29,15 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
     [query getObjectInBackgroundWithId:appDelegate.rowID block:^(PFObject *iphoneApp, NSError *error) {
+        NSDate *estToday = [[NSDate date] dateByAddingTimeInterval:-60*60*5];
+        NSLog(@"today %@",estToday);
         iphoneApp[@"pendingQuestions"] = @-1;
         [iphoneApp saveInBackground];
         [NSThread sleepForTimeInterval:1];
         if (self.gotAnswerCorrect == true){
             [iphoneApp addObject:self.questionNumber forKey:@"correctAnswerArray"];
             [iphoneApp addObject:self.JOL forKey:@"correctJOLArray"];
-            [iphoneApp addObject:[NSDate date] forKey:@"correctDateArray"];
+            [iphoneApp addObject:estToday forKey:@"correctDateArray"];
             [iphoneApp saveInBackground];
             
             //date formatter to y/m/d
@@ -53,7 +55,7 @@
             for (int i=0;i<[dateArray count];i++){
                 //NSLog(@"%@",[dateComparisonFormatter stringFromDate:dateArray[i]]);
                 QuestionClass *question = [[QuestionClass alloc]initWithQuestion:correctArray[i] andJOL:JOLArray[i] andDate:dateArray[i]];
-                if ([[dateComparisonFormatter stringFromDate:[NSDate date]] isEqualToString:[dateComparisonFormatter stringFromDate:dateArray[i]]]){
+                if ([[dateComparisonFormatter stringFromDate:estToday] isEqualToString:[dateComparisonFormatter stringFromDate:dateArray[i]]]){
                     //NSLog(@"same date");
                     [questionArray addObject:question];
                     //NSLog(@"question# %d",[incorrectArray[i] integerValue]);
@@ -92,7 +94,7 @@
         else { //adds question# and JOL to parse.com array
             [iphoneApp addObject:self.questionNumber forKey:@"incorrectAnswerArray"];
             [iphoneApp addObject:self.JOL forKey:@"incorrectJOLArray"];
-            [iphoneApp addObject:[NSDate date] forKey:@"incorrectDateArray"];
+            [iphoneApp addObject:estToday forKey:@"incorrectDateArray"];
             [iphoneApp saveInBackground];
             
             //date formatter to y/m/d
@@ -110,7 +112,7 @@
             for (int i=0;i<[dateArray count];i++){
                 //NSLog(@"%@",[dateComparisonFormatter stringFromDate:dateArray[i]]);
                 QuestionClass *question = [[QuestionClass alloc]initWithQuestion:incorrectArray[i] andJOL:JOLArray[i] andDate:dateArray[i]];
-                if ([[dateComparisonFormatter stringFromDate:[NSDate date]] isEqualToString:[dateComparisonFormatter stringFromDate:dateArray[i]]]){
+                if ([[dateComparisonFormatter stringFromDate:estToday] isEqualToString:[dateComparisonFormatter stringFromDate:dateArray[i]]]){
                     //NSLog(@"same date");
                     [questionArray addObject:question];
                     //NSLog(@"question# %d",[incorrectArray[i] integerValue]);
