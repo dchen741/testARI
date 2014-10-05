@@ -33,7 +33,7 @@
         NSLog(@"today %@",estToday);
         iphoneApp[@"pendingQuestions"] = @-1;
         [iphoneApp saveInBackground];
-        [NSThread sleepForTimeInterval:1];
+        [NSThread sleepForTimeInterval:1.5];
         if (self.gotAnswerCorrect == true){
             [iphoneApp addObject:self.questionNumber forKey:@"correctAnswerArray"];
             [iphoneApp addObject:self.JOL forKey:@"correctJOLArray"];

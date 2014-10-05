@@ -72,7 +72,7 @@
             }
         }
     
-        [NSThread sleepForTimeInterval:.2];
+        [NSThread sleepForTimeInterval:.5];
         NSNumber *pendQuestion = iphoneApp[@"pendingQuestions"];
         if ([pendQuestion intValue] > -1){
             questionNumber = pendQuestion;
