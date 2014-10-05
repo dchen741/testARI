@@ -33,7 +33,9 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSDate *estToday = [[NSDate date] dateByAddingTimeInterval:-60*60*5];
     NSString *questionString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"questions" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
+    NSString *questionCategory = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"categories" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
     NSArray * questionArray = [questionString componentsSeparatedByString:@"\n"];
+    NSArray * questionCategoryArray =[questionCategory componentsSeparatedByString:@"\n"];
     
     PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
     [query getObjectInBackgroundWithId:appDelegate.rowID block:^(PFObject *iphoneApp, NSError *error) {
@@ -166,6 +168,7 @@
         }
         self.questionTextView.text = question;
     }];
+    self.questionCategoryLabel.text = questionCategoryArray[[questionNumber integerValue]];
 }
 
 - (IBAction)hideKeyboard:(id)sender {

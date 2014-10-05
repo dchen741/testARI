@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9544817319AB05BC00F71FED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E7519808E97009C7775 /* Parse.framework */; };
 		95AA2BC819B6BAC100E4DD8A /* contestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AA2BC719B6BAC100E4DD8A /* contestViewController.m */; };
+		95D420C619E1288C002F6C18 /* categories.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95D420C519E1288C002F6C18 /* categories.txt */; };
 		B19CE225197CF5B50071379C /* ARI-LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE222197CF5B50071379C /* ARI-LOGO.png */; };
 		B19CE226197CF5B50071379C /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE223197CF5B50071379C /* checkmark.png */; };
 		B19CE227197CF5B50071379C /* xmark.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE224197CF5B50071379C /* xmark.png */; };
@@ -78,6 +79,7 @@
 /* Begin PBXFileReference section */
 		95AA2BC619B6BAC100E4DD8A /* contestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contestViewController.h; sourceTree = "<group>"; };
 		95AA2BC719B6BAC100E4DD8A /* contestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contestViewController.m; sourceTree = "<group>"; };
+		95D420C519E1288C002F6C18 /* categories.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = categories.txt; sourceTree = "<group>"; };
 		B19CE222197CF5B50071379C /* ARI-LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ARI-LOGO.png"; path = "images/ARI-LOGO.png"; sourceTree = "<group>"; };
 		B19CE223197CF5B50071379C /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark.png; path = images/checkmark.png; sourceTree = "<group>"; };
 		B19CE224197CF5B50071379C /* xmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xmark.png; path = images/xmark.png; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 		B1DD1B0219731305009C2B6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				95D420C519E1288C002F6C18 /* categories.txt */,
 				B19DC9F6198311C600A614D4 /* questions.txt */,
 				B1DD1B0319731305009C2B6E /* iphoneQuiz-Info.plist */,
 				B1DD1B0419731305009C2B6E /* InfoPlist.strings */,
@@ -391,6 +394,7 @@
 				B1DD1B1219731305009C2B6E /* Main_iPad.storyboard in Resources */,
 				B19CE226197CF5B50071379C /* checkmark.png in Resources */,
 				B1DD1B1719731305009C2B6E /* Images.xcassets in Resources */,
+				95D420C619E1288C002F6C18 /* categories.txt in Resources */,
 				B1DD1B0F19731305009C2B6E /* Main_iPhone.storyboard in Resources */,
 				B1DD1B0619731305009C2B6E /* InfoPlist.strings in Resources */,
 				B19CE227197CF5B50071379C /* xmark.png in Resources */,

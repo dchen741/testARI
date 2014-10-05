@@ -315,23 +315,36 @@ Glucose infusion with an untreated [thiamine] deficiency can precipitate [Wernik
 Alkali ingestion causes [liquefactive] necrosis, causing a deep esophageal burn, whereas acid produces [coagulative] necrosis.
 [Boerhaave's] syndrome is the transmural perforation of the [esophagus], often occurring due to emesis. (Medscape 2013)
 Crunching sounds heard over the [precordium], and correlating with heart beat indicates a positive [Hamman's] sign.
-Cisatracurium undergoes Hoffman elimination, which is dependent upon [pH] and [temperature] as opposed to any organ.
+[Cisatracurium] undergoes [Hoffman elimination], which is independent of liver or renal function.
 During the [Heineke-Mikulicz] pyloroplasty, a [longitudinal] incision disrupts the circular muscle in the pylorus which is then repaired with a transverse stitch.
-A [Finney] pyloroplasty entails creating an inverted U-shaped anastomosis between the stomach and duodenum to increase the size of the [pyloric] canal.
-The [parietal] cells secrete acid when the [vagus] nerve releases acetycholine and the antrum releases [gastrin].
-Succinylcholine is used as a [depolarizing] blocking agent to promote complete muscle [relaxation].
-A hernia in the grain containing a [Meckel] diverticulum is a [Littre] hernia.
+A [Finney] pyloroplasty entails creating an inverted U-shaped anastomosis between the stomach and duodenum to increase the size of the pyloric canal.
+The [parietal] cells secrete acid when the [vagus nerve releases [acetycholine] and the antrum releases [gastrin].
+[Succinylcholine] is used as a [depolarizing] blocking agent to promote complete muscle relaxation.
+A hernia in the groin containing a Meckel's diverticulum is a [Littre] hernia.
 A swelling lateral to the pubic tubercle and below the [inguinal] ligament indicates a [femoral] hernia.
 When the transversus abdominis aponeurosis and transversalis fascia are sutured to the [inguinal] ligament with nonabsorable interrupted sutures, it is called a [Bassini] repair.
 When a mass protrudes through the [Hesselbach] triangle inferior to the inferior epigastric vessels, it is called a [direct] hernia.
 A hernia of abdominal contents protruding through the [internal] ring and into the inguinal canal is called a(n) [indirect] hernia.
-[Intestinal] obstruction does not occur in a [Richter] hernia because only part of the intestine protrudes into the hernia sac.
-The lattissimus dorsi, [external] abdominal oblique, and the iliac crest form the [Petit] triangle
-The [Cloquet] node is located in the proximal femoral [ring].
+Intestinal obstruction does not occur in a [Richter] hernia because only part of the intestine protrudes into the hernia sac.
+The latissimus dorsi, external abdominal oblique, and the iliac crest form the inferor lumbar triangle of [Petit].
+The [Cloquet] node is located in the proximal femoral ring.
 The [median] umbilical fold overlays the [urachus], which is the fibrous remnant of the fetal allantois.
-The hernia of [Morgagni] occurs between the [xiphoid] process and the costochondral attachments of the diaphragm.
-The veins in the [falciform] ligament, also known as [Sappey's] plexus drain into the phrenic veins.
-The anastomosis between the mesenteric and the peritoneal veins, formed by the veins of [Retzius], empty into the [inferior] vena cava.
+The hernia of [Morgagni] occurs between the xiphoid process and the costochondral attachments of the diaphragm.
+The veins in the [falciform] ligament, also known as [Sappey's] plexus, drain into the phrenic veins.
+The anastomosis between the mesenteric and the peritoneal veins, formed by the veins of [Retzius], empty into the inferior vena cava.
 The most common type of hiatal hernia is Type [I], also known as the [sliding] hiatal hernia.
-A Type [II] hiatal hernia, or a true paraesophageal hernia, occurs when the fundus and perhaps the whole stomach have migrated along the esophagus and into the [mediastinum]. 
+A Type [II] hiatal hernia, or a true paraesophageal hernia, occurs when the fundus and perhaps the whole stomach have migrated along the esophagus and into the mediastinum. 
 A Type [III] hiatial hernia, or a mixed paraesophageal hernia, occurs when the gastroesophageal junction and most of the stomach have moved into the mediastinum.
+[Dobutamine] is the [ionotropic] agent of choice for increasing cardiac output.
+The ionotrope not recommended for the treatment of patients with [septic] shock is [dopamine].
+[Norepinephrine] is the [vasopressor] of first choice for septic shock.
+The [exocrine] pancreas responds to duodenal hormones, such as CCK and [secretin].
+[CCK] and decretin signal the pancrease to secrete enzymes and [bicarbonate]/
+[Bouveret]'s syndrome involves the impaction of a large [gallstone] in the pyloric channel.
+Approximately one million islets of [Langerhans] cells occupy a normal [pancreas].
+[Chilaiditi]'s sign occurs when a loop of bowel becomes lodged between the liver and the [diaphragm].
+A [first]-degree AV block is defined by a prolonged [PR] interval greater than 0.20 seconds.
+The recommended atropine dose for bradycardia is [0.5] mgh IV every three to five minutes to a maximum total dose of [3] mg.
+Consider [Epinephrine] or [dopamine] infusion for patients with symptomatic bradycardia, especially associated with hypotension, for whom atropine may be inappropriate or after atropine fails.
+In the often transient and asymptomatic Mobitz type [I] block, the block is at the [AV] node.
+A Mobitz type [II] block is usually within the [His-Purkinje] system.
