@@ -107,6 +107,10 @@
         iphoneApp[@"correctAnswerArray"] = sortedQuestionArray;
         [iphoneApp saveInBackground];
 
+        NSInteger numberOfBadges = [UIApplication sharedApplication].applicationIconBadgeNumber;
+        numberOfBadges -=1;
+        [[UIApplication sharedApplication] setApplicationIconBadgeNumber:numberOfBadges];
+        
         NSNumber *questionsToday = iphoneApp[@"questionsToday"];
         if ([questionsToday integerValue] == 5){
             [self performSegueWithIdentifier:@"contestFinishSegue" sender:sender];
