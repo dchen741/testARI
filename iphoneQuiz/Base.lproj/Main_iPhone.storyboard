@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -94,12 +95,12 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="xsw-Mc-iXp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2u2-XY-Jvz">
-                                <rect key="frame" x="85" y="78" width="150" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4SE-Zt-efE">
+                                <rect key="frame" x="78" y="72" width="165" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -107,7 +108,7 @@
                     <connections>
                         <outlet property="answerInputTextfield" destination="2HY-YE-TN9" id="WKv-m8-x6Z"/>
                         <outlet property="progressLabel" destination="GA7-sh-Kn9" id="hkh-Ra-uWu"/>
-                        <outlet property="questionCategoryLabel" destination="2u2-XY-Jvz" id="54h-JZ-qbn"/>
+                        <outlet property="questionCategoryView" destination="4SE-Zt-efE" id="pdR-Au-U5C"/>
                         <outlet property="questionProgressBar" destination="KuZ-w8-l6r" id="aDP-cM-1Ot"/>
                         <outlet property="questionTextView" destination="QJi-wo-Duf" id="ade-2n-Ulw"/>
                     </connections>
@@ -373,9 +374,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="DYi-0N-jSW"/>
+        <segue reference="sy3-5l-gLW"/>
+        <segue reference="xsw-Mc-iXp"/>
         <segue reference="hA7-8g-cPV"/>
-        <segue reference="ow2-fT-hXJ"/>
         <segue reference="KI2-vS-1Kh"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -167,8 +167,8 @@
             }
         }
         self.questionTextView.text = question;
+        self.questionCategoryView.text = questionCategoryArray[[questionNumber integerValue]];
     }];
-    self.questionCategoryLabel.text = questionCategoryArray[[questionNumber integerValue]];
 }
 
 - (IBAction)hideKeyboard:(id)sender {

@@ -23,6 +23,11 @@ The blood supply to the [lateral] compartment of the lower leg is the [peroneal]
 The [saphenous] nerve, a branch of the femoral nerve, supplies cutaneous innervation to the medial arch of the foot.
 The [deep peroneal] nerve supplies cutaneous innervation to the dorsal wedge between toes one and two.
 The [tibial] nerve provides cutaneous innervation to the [plantar] side of the heel.
+The latissimus dorsi, external abdominal oblique, and the iliac crest form the inferor lumbar triangle of [Petit].
+The [Cloquet] node is located in the proximal femoral ring.
+The [median] umbilical fold overlays the [urachus], which is the fibrous remnant of the fetal allantois.
+The veins in the [falciform] ligament, also known as [Sappey's] plexus, drain into the phrenic veins.
+The anastomosis between the mesenteric and the peritoneal veins, formed by the veins of [Retzius], empty into the inferior vena cava.
 A positive [Allen's] test indicates the absence of the palmar ulnar-radial anastomosis.
 The [Babinski] sign manifests as the [dorsiflexion] of the hallux with subsequent spreading of the remaining phalanges as the lateral plantar surface of the foot is stimulated.
 Mastoid ecchymosis following a [basal] skull fracture indicates a positive [Battle's] sign.
@@ -65,6 +70,12 @@ A [pantaloon] hernia has both a direct and indirect component.
 An [Amynad]’s hernia contains the appendix.
 A [Littre]’s hernia contains a Meckel’s diverticulum.
 A [Richter]’s hernia contains the antimesenteric wall of the intestine and may cause strangulation without obstruction. 
+A hernia in the groin containing a Meckel's diverticulum is a [Littre] hernia.
+A swelling lateral to the pubic tubercle and below the [inguinal] ligament indicates a [femoral] hernia.
+When a mass protrudes through the [Hesselbach] triangle inferior to the inferior epigastric vessels, it is called a [direct] hernia.
+A hernia of abdominal contents protruding through the [internal] ring and into the inguinal canal is called a(n) [indirect] hernia.
+Intestinal obstruction does not occur in a [Richter] hernia because only part of the intestine protrudes into the hernia sac.
+The hernia of [Morgagni] occurs between the xiphoid process and the costochondral attachments of the diaphragm.
 A [Belsey] fundoplication is  characterized by gastric fundoplication with a two hundred and forty degree wrap.
 A Billroth [1] operation involves the resection of the pyloric antrum and end-to-end anastomosis of the gastric remnant to the [duodenum].
 A Billroth [2] operation involves the resection of the pyloric antrum and side-to-side anastomosis of the gastric remnant to the [jejunum].
@@ -79,6 +90,9 @@ A [Syme]'s amputation involves the amputation of the foot at the ankle with the 
 The fundoplication with [270]-degree posterior wrap is the upper gastrointestinal surgery known as [Toupet] fundoplication.
 To treat a pulmonary [embolism], a surgeon may perform a pulmonary [embolectomy] in a procedure known as [Trendelenburg]'s operation.
 [Jaboulay]'s pyloroplasty requires the formation of a side-to-side gastroduodenal anastomosis.
+During the [Heineke-Mikulicz] pyloroplasty, a [longitudinal] incision disrupts the circular muscle in the pylorus which is then repaired with a transverse stitch.
+A [Finney] pyloroplasty entails creating an inverted U-shaped anastomosis between the stomach and duodenum to increase the size of the pyloric canal.
+When the transversus abdominis aponeurosis and transversalis fascia are sutured to the [inguinal] ligament with nonabsorable interrupted sutures, it is called a [Bassini] repair.
 If a patient presents with a fracture of the neck of the fifth metacarpal after punching a solid object, the patient is said to have a [Boxer]'s fracture.
 A [Chance] fracture is the horizontal fracture of the vertebral body caused by hyperflexion of the spine.
 A forced hyperflexion of the neck may result in the spinous process fracture of C6, C7, or T1, and is referred to as a [Clay shoveller]'s fracture.
@@ -206,17 +220,6 @@ A Type [V] peptic ulcer lies anywhere on the stomach, and is associated with chr
 [MALT] lymphoma is often associated with chronic inflammation of the stomach lining caused by the colonization of [H. pylori].
 [Milrinone] is a [phosphodiesterase] inhibitor used in cardiogenic shock to increase inotropy.
 [Dobutamine] is a synthetic catecholamine used in [cardiogenic shock] to increase inotropy.
-The most abundant amino acid in the body is [glutamine].
-The amino acid [glutamine] is the precursor to the antioxidant [glutathione].
-[Maltase] is produced in the intestinal glands to hydrolyze maltose into two [glucoses] in the small intestine.
-Sucrase is produced in the intestinal glands to hydrolyze sucrose into [glucose] and [fructose] in the small intestine.
-Lactase is produced in the intestinal glands to hydrolyze lactose into [glucose] and [galactose] in the small intestine.
-As chyme enters the small intestine, the duodenum secretes [CCK] to stimulate [bile] secretion.
-[Chief] cells stimulate the secretion of inactive form of [pepsin] in the stomach.
-[Parietal] cells secrete [HCl] in the stomach.
-[Pyloric] glands secrete [gastrin], which stimulates the secretion of HCl.
-Produced by the small intestine, [enterokinase] activates [trypsin].
-[Intrinsic] Factor is required for the absorption of vitamin [B12].
 In the Transfusions Requirements In Critical Care (TRICC) study, a restrictive transfusion hemoglobin trigger of [7.0] was non-inferior to a liberal transfusion hemoglobin trigger of [10.0] overall, and was shown to be superior in younger patients and patients with lower APACHE II scores.
 In the Functional Outcomes in Cardiovascular Patients Undergoing Surgical Hip Fracture Repair (FOCUS) study, a restrictive transfusion hemoglobin trigger of [8.0] was non-inferior to a liberal transfusion hemoglobin trigger of [10.0] in elderly patients at high cardiovascular risk.
 In the landmark ARDSnet trial, ventilation with lower tidal volume, [6] mL per kilogram of predicted body weight, resulted in lower mortality when compared to traditional ventilation treatment.  Target plateau pressure was less than [30] cm of water.
@@ -224,114 +227,11 @@ For penetrating trauma, zone [I] of the neck is the area between the clavicle an
 For penetrating trauma, zone [II] of the neck is between the [cricoid] cartilage and the angle of the mandible.
 In the blunt trauma patient, a Diagnostic Peritoneal Lavage is considered positive when the [RBC] count measures [100,000]/mm3. (Medscape, June 2012)
 A [WBC] count of greater than [500]/mm3 indicates a positive Diagnostic Peritoneal Lavage. (Medscape, June 2012)
-[Hair]=[Pelo]
-[Head]=[Cabeza]
-[Forehead]=[Frente]
-[Face]=[Cara]
-[Eye]=[Ojo]
-[Nose]=[Nariz]
-[Cheek]=[Mejilla]
-[Mouth]=[Boca]
-[Lips]=[Labios]
-[Teeth]=[Dientes]
-[Tongue]=[Lengua]
-[Jaw]=[Mandibula]
-[Chin]=[Menton]
-[Neck]=[Cuello]
-[Scapula]=[Escapula]
-[Skin]=[Piel]
-[Throat]=[Garganta]
-[Back]=[Espalda]
-[Umblicus]=[Ombligo]
-[Buttocks]=[Nalgas]
-[Anus]=[Ano]
-[Prostate]=[Prostata]
-[Testicles]=[Testiculos]
-[Penis]=[Pene]
-[Breasts]=[Mamas]
-[Nipples]=[Pezones]
-[Ovaries]=[Ovarios]
-[Uterus]=[Utero]
-[Cervix]=[Cervix]
-[Vagina]=[Vagina]
-[Rectum]=[Recto]
-[Belly]=[Panza]
-[Body]=[Cuerpo]
-[Brain]=[Cerebro]
-[Larynx]=[Laringe]
-[Thyroid] gland=Glandula [Tiroides]
-[Trachea]=[Traquea]
-[Shoulder]=[Hombro]
-[Clavicle]=[Clavicula]
-[Artery]=[Arteria]
-[Rib]=[Costilla]
-[Lung]=[Pulmon]
-[Heart]=[Corazon]
-[Muscle]=[Musculo]
-[Chest]=[Pecho]
-[Arm]=[Brazo]
-[Vein]=[Vena]
-[Axilla]=[Axila]
-[Liver]=[Higado]
-[Spleen]=[Bazo]
-[Stomach]=[Estomago]
-[Kidney]=[Rinon]
-[Gallbladder]=vesicula [biliar]
-[Pancreas]=[Pancreas]
-[Elbow]=[Codo]
-[Forearm]=[Antebrazo]
-[Abdomen]=[Barriga]
-[Appendix]=[Apendice]
-[Bladder]=[Vejiga]
-[Hip]=[Cadera]
-[Wrist]=[Muneca]
-[Hand]=[Mano]
-[Thumb]=[Pulgar]
-[Finger]=[Dedo]
-[Diaphragm]=[Diafragma]
-[Nerve]=[Nervio]
-[Lymph] Node=Ganglio [Linfatico]
-[Thigh]=[Muslo]
-[Groin]=[Ingle]
-[Knee]=[Rodilla]
-[Leg]=[Pierna]
-[Shin]=[Espinilla]
-[Bone]=[Hueso]
-[Joint]=[Articulacion]
-[Ankle]=[Tobillo]
-[Heel]=[Talon]
-[Foot]=[Pie]
-[Toes]=[Dedos] del pie
-[Nail]=[Una]
-[Calf]=[Pantorrilla]
-In statistics, a Type [I] error occurs when the null hypothesis is rejected when the null is [true].
-In statistics, a Type [II] error occurs when the null hypothesis is accepted when the null is [false].
-A [continuous] variable is one that can assume a range of values, ie age and expression level.
-A [categorical] variable is one that assumes a discrete value independent from others in the category, ie race, nominal scales.
-With a continuous dependent variable and a categorical independent variable, an [ANOVA] or linear regression statistical test may be used.
-With a [continuous] dependent variable and a [continuous] independent variable, a correlation or a linear regression statistical test may be used.
-Post-traumatic seizure prophylaxis in traumatic brain injury is recommended for [7] days.
-Glucose infusion with an untreated [thiamine] deficiency can precipitate [Wernike-Korsakoff] syndrome.
 Alkali ingestion causes [liquefactive] necrosis, causing a deep esophageal burn, whereas acid produces [coagulative] necrosis.
 [Boerhaave's] syndrome is the transmural perforation of the [esophagus], often occurring due to emesis. (Medscape 2013)
 Crunching sounds heard over the [precordium], and correlating with heart beat indicates a positive [Hamman's] sign.
 [Cisatracurium] undergoes [Hoffman elimination], which is independent of liver or renal function.
-During the [Heineke-Mikulicz] pyloroplasty, a [longitudinal] incision disrupts the circular muscle in the pylorus which is then repaired with a transverse stitch.
-A [Finney] pyloroplasty entails creating an inverted U-shaped anastomosis between the stomach and duodenum to increase the size of the pyloric canal.
-The [parietal] cells secrete acid when the [vagus nerve releases [acetycholine] and the antrum releases [gastrin].
 [Succinylcholine] is used as a [depolarizing] blocking agent to promote complete muscle relaxation.
-A hernia in the groin containing a Meckel's diverticulum is a [Littre] hernia.
-A swelling lateral to the pubic tubercle and below the [inguinal] ligament indicates a [femoral] hernia.
-When the transversus abdominis aponeurosis and transversalis fascia are sutured to the [inguinal] ligament with nonabsorable interrupted sutures, it is called a [Bassini] repair.
-When a mass protrudes through the [Hesselbach] triangle inferior to the inferior epigastric vessels, it is called a [direct] hernia.
-A hernia of abdominal contents protruding through the [internal] ring and into the inguinal canal is called a(n) [indirect] hernia.
-Intestinal obstruction does not occur in a [Richter] hernia because only part of the intestine protrudes into the hernia sac.
-The latissimus dorsi, external abdominal oblique, and the iliac crest form the inferor lumbar triangle of [Petit].
-The [Cloquet] node is located in the proximal femoral ring.
-The [median] umbilical fold overlays the [urachus], which is the fibrous remnant of the fetal allantois.
-The hernia of [Morgagni] occurs between the xiphoid process and the costochondral attachments of the diaphragm.
-The veins in the [falciform] ligament, also known as [Sappey's] plexus, drain into the phrenic veins.
-The anastomosis between the mesenteric and the peritoneal veins, formed by the veins of [Retzius], empty into the inferior vena cava.
 The most common type of hiatal hernia is Type [I], also known as the [sliding] hiatal hernia.
 A Type [II] hiatal hernia, or a true paraesophageal hernia, occurs when the fundus and perhaps the whole stomach have migrated along the esophagus and into the mediastinum. 
 A Type [III] hiatial hernia, or a mixed paraesophageal hernia, occurs when the gastroesophageal junction and most of the stomach have moved into the mediastinum.
@@ -348,3 +248,91 @@ The recommended atropine dose for bradycardia is [0.5] mgh IV every three to fiv
 Consider [Epinephrine] or [dopamine] infusion for patients with symptomatic bradycardia, especially associated with hypotension, for whom atropine may be inappropriate or after atropine fails.
 In the often transient and asymptomatic Mobitz type [I] block, the block is at the [AV] node.
 A Mobitz type [II] block is usually within the [His-Purkinje] system.
+Glucose infusion with an untreated [thiamine] deficiency can precipitate [Wernike-Korsakoff] syndrome.
+The most abundant amino acid in the body is [glutamine].
+The amino acid [glutamine] is the precursor to the antioxidant [glutathione].
+[Maltase] is produced in the intestinal glands to hydrolyze maltose into two [glucoses] in the small intestine.
+Sucrase is produced in the intestinal glands to hydrolyze sucrose into [glucose] and [fructose] in the small intestine.
+Lactase is produced in the intestinal glands to hydrolyze lactose into [glucose] and [galactose] in the small intestine.
+As chyme enters the small intestine, the duodenum secretes [CCK] to stimulate [bile] secretion.
+[Chief] cells stimulate the secretion of inactive form of [pepsin] in the stomach.
+[Parietal] cells secrete [HCl] in the stomach.
+[Pyloric] glands secrete [gastrin], which stimulates the secretion of HCl.
+Produced by the small intestine, [enterokinase] activates [trypsin].
+[Intrinsic] Factor is required for the absorption of vitamin [B12].
+The [parietal] cells secrete acid when the [vagus nerve releases [acetycholine] and the antrum releases [gastrin].
+In statistics, a Type [I] error occurs when the null hypothesis is rejected when the null is [true].
+In statistics, a Type [II] error occurs when the null hypothesis is accepted when the null is [false].
+A [continuous] variable is one that can assume a range of values, ie age and expression level.
+A [categorical] variable is one that assumes a discrete value independent from others in the category, ie race, nominal scales.
+With a continuous dependent variable and a categorical independent variable, an [ANOVA] or linear regression statistical test may be used.
+With a [continuous] dependent variable and a [continuous] independent variable, a correlation or a linear regression statistical test may be used.
+[Sacrococcygealteratoma] is the most common neonatal tumor arising from [totipotent] somatic cells
+[Meconium ileus] is a characteristic small-intestinal obstruction in neonates with [cystic fibrosis]
+[Cystic fibrosis] is characterized by an epithelial [chloride] channel defect that results in thickened secretions
+[Haemophilus influenzae] is the causative organism of acute [epiglottitis]
+Drooling and prolonged inspiratory stridor that worsens in the supine position is characteristic of [epiglottitis]
+[Hepatoblastoma] is the most common liver tumor amongst pediatric population 
+In pediatric patients, episodic abdominal pain, obstructive jaundice, and right upper quadrant mass is characteristic of [choledochal cyst]
+The most frequently encountered type of choledocal cyst is type [I] 
+The most serious consequence of congenital diaphragmatic hernia is pulmonary [hypertension]
+Progressive, projectile, nonbilious emesis at 2 to 6 weeks after birth is charactersitic of [pyloric stenosis]
+Stippled calcification on an abdominal film are pathognomonic of [meconium] peritonitis
+A mass in the anterior midline may be a remnant of the [thyroglossal duct]
+[Umbilical] hernia repair can be postponed until of the patient is 2-4 years old. 
+[Meckel diverticulum] represents a remnant of the [omphalomesenteric duct]
+[Choledochal] cysts are a risk factor for [adenocarcinoma] of the biliary tract.
+[Coarctation] of the aorta causes extensive collateral development involving the [mammary]and [intercostal] arteries. 
+The most common annomaly associated to coarctation of the aorta is [bicuspid] aortic valve 
+In [Coarctation] of the aorta collateral development is seen as [Rib] notching on chest radiographs
+The most common congenital chest wall deformity is pectus [excavatum]
+[Neuroblastoma] is the most common extracranial solid tumor and the most common abdominal malignant tumor of childhood
+[N-myc] gene is associated with neuroblastoma and is a bad prognosis factor
+Most frequent site of metatastasis for neuroblastoma is the [bone marrow]
+A  volvulus occurs when the midgut twists in a [clockwise] direction about the superior mesenteric artery and vein
+[Cystic hygroma] is derived from defects in the communication between lymphatics in the neck and the internal jugular vein.
+[Branchial cleft] cysts are found along the [lateral] aspects of the neck.
+Congenital duodenal obstruction is associated in 20-40% cases with  trisomy [21]
+In patients with malrotation the cecum is fixed in the right upper quadrant by the [Ladd] bands which may lead to [duodenal] obstruction
+Zone [1] retroperitoneal hematomas regardless of cause or size are routinely explored 
+Zone 2 and Zone 3 retroperitoneal hematomas caused by [penetrating] injuries are routinely explored 
+Zone [2] hematomas caused by [blunt] trauma can be left alone if they are not expanding
+The [Kehr] sign describes referred pain caused by [diaphragmatic] irritation.
+The "Rule[of Nines]" provides an anatomic estimate of the initial evaluation of the extent of injury in a burn patient 
+In the "Rule of Nines" for  burned patients, each leg is considered to be [18]% total body surface area
+In the "Rule of Nines" for  burned patients each arm is considered to be [9]% total body surface area, 
+In the "Rule of Nines" for  burned patients the anterior trunk is considered to be [18]% total body surface area, 
+In the "Rule of Nines" for  burned patients the head is considered to be [9]% total body surface area
+To estimate extent of injury in burn patients the patient's full palm, including digits, can be used to represent [1]% total body surface area.
+In tissue injury following burn injury the central area is the zone of [coagulation] 
+In tissue injury following burns the area surrounding the zone of coagulation is a zone of [stasis], characterized by vasoconstriction and ischemia
+In tissue injury following burns the outermost area of a burn is the zone of [hyperemia] or superficial partial-thickness burn
+In burned patients, a commonly used resuscitation formulas is the [Parkland] formula
+The Parkland formula calls for [4] mL of crystalloid per percentage TBSA burned over [24] hours. 
+In the Parkland formula, half of the calculated resuscitation volume is delivered during the first [8] hours after injury.
+A common side effect of [silver sulfadiazine], a topical antibiotic used in burned patients is: transient [leukopenia]
+A common side effect of [mafenide acetate], a topical antibiotic used in burned patients is: [Carbonic ahydrase] inhibition with 2° metabolic acidosis
+A common side effect of [silver nitrate], a topical antibiotic used in burned patients is: hyponatremia
+In Toxic Epidermal Necrolysis (TEN), the skin between the blisters can be sheared with minimal digital pressure in a test known as a [Nikolsky] sign. 
+A Le Fort [I] fracture is a horizontal [maxillary] fracture that will allow the maxillary arch to move in relation to the rest of the face. 
+A Le Fort [II] fracture is a maxillary fracture that involves the nasal bone. 
+A Le Fort [III] fracture results in craniofacial separation with the entire face moving in relation to the skull base, involving  the zygomatic arch and both the superior lateral  and the superior medial maxillary buttress.
+[Subdural] hematoma is the most common intracranial lesion, occurring in 20% to 40% of severely head-injured patients
+ The [Cushing] response is characterized by the triad of  [hypertension], [bradycardia] and [decreased] respiratory rate.
+The components assessed in the Glasgow Coma Scale are [eyes], [verbal], [motor]
+The most reliable sign of injury to the kidney is [hematuria]
+[Blood] at the urethral [meatus] is the classic sign of injury to the male urethra
+Retrograde [urethrography] is the essential diagnostic test used for documenting the location, nature, and extent of injury to the urethra. 
+Post-traumatic seizure prophylaxis in traumatic brain injury is recommended for [7] days.
+According to the BIRADS clasification a  normal mammography is given a grade of [1]
+According to the BIRADS clasification a  benign finding on mammography is given a grade of [2]
+According to the BIRADS clasification a  probably benign finding with a risk of malignancy of 1-2% on mammography is given a grade of [3]
+According to the BIRADS clasification a  suspicious finding on mammography is given a grade of [4] and a [biopsy] is recommended
+According to the BIRADS clasification a finding highly suggestive of malignancy  is given a grade of [5] and a biopsy is required
+For BIRADS 1 and 2 the recommended follow-up is yearly mammography after age [40]
+For BIRADS [3] the recommended follow-up is short term mammography (4-6months)
+[Paget's] disease of the breast is a rare form of in situ carcinoma involving the [nipple] and is often associated with an underlying [invasive] or intraductal carcinoma.
+Eczematoid changes of the nipple with accompanying edema, erythema, pruritus, and nipple discharge are characterisic of [Paget]'s disease
+[Mastectomy] is the preferred treatment for Paget's disease.
+BRCA [1] mutations are linked to the development of breast, ovarian, and prostate cancers 
+BRCA [2] families have an increased incidence of male and female breast cancers
