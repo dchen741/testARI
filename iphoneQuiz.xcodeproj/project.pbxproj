@@ -78,7 +78,7 @@
 
 /* Begin PBXFileReference section */
 		95AA2BC619B6BAC100E4DD8A /* contestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contestViewController.h; sourceTree = "<group>"; };
-		95AA2BC719B6BAC100E4DD8A /* contestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = contestViewController.m; sourceTree = "<group>"; };
+		95AA2BC719B6BAC100E4DD8A /* contestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contestViewController.m; sourceTree = "<group>"; };
 		95D420C519E1288C002F6C18 /* categories.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = categories.txt; sourceTree = "<group>"; };
 		B19CE222197CF5B50071379C /* ARI-LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ARI-LOGO.png"; path = "images/ARI-LOGO.png"; sourceTree = "<group>"; };
 		B19CE223197CF5B50071379C /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark.png; path = images/checkmark.png; sourceTree = "<group>"; };
@@ -131,11 +131,11 @@
 		B1DD1B0919731305009C2B6E /* iphoneQuiz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iphoneQuiz-Prefix.pch"; sourceTree = "<group>"; };
 		B1DD1B0A19731305009C2B6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1DD1B0B19731305009C2B6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B1DD1B0E19731305009C2B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		B1DD1B1119731305009C2B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B1DD1B0E19731305009C2B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B1DD1B1119731305009C2B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B1DD1B1319731305009C2B6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B1DD1B1419731305009C2B6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B1DD1B1619731305009C2B6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images.xcassets; sourceTree = "<group>"; };
+		B1DD1B1619731305009C2B6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B1DD1B1C19731305009C2B6E /* iphoneQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iphoneQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DD1B1D19731305009C2B6E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B1DD1B2519731305009C2B6E /* iphoneQuizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iphoneQuizTests-Info.plist"; sourceTree = "<group>"; };

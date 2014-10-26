@@ -74,11 +74,7 @@
     
         [NSThread sleepForTimeInterval:.5];
         NSNumber *pendQuestion = iphoneApp[@"pendingQuestions"];
-        if ([pendQuestion intValue] > -1){
-            questionNumber = pendQuestion;
-            NSLog(@"pending %@",questionNumber);
-        }
-        else if (incorrectSize > 0){
+        if (incorrectSize > 0){
             NSMutableArray *incorrectAnswerArray = iphoneApp[@"incorrectAnswerArray"];
             NSMutableArray *incorrectDateArray = iphoneApp[@"incorrectDateArray"];
             NSMutableArray *incorrectJOLArray = iphoneApp[@"incorrectJOLArray"];
@@ -105,6 +101,10 @@
             iphoneApp[@"correctJOLArray"] = correctJOLArray;
             iphoneApp[@"pendingQuestions"] = questionNumber;
             [iphoneApp saveInBackground];
+        }
+        else if ([pendQuestion intValue] > -1){
+            questionNumber = pendQuestion;
+            NSLog(@"pending %@",questionNumber);
         }
         else {
             int rnd = arc4random()%[questionPoolArray count];
@@ -167,7 +167,7 @@
             }
         }
         self.questionTextView.text = question;
-        self.questionCategoryView.text = questionCategoryArray[[questionNumber integerValue]];
+        self.questionCategoryLabel.text = questionCategoryArray[[questionNumber integerValue]];
     }];
 }
 

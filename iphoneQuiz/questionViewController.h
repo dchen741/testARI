@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *answerInputTextfield;
 @property (weak, nonatomic) IBOutlet UIProgressView *questionProgressBar;
 @property (weak, nonatomic) IBOutlet UILabel *progressLabel;
-@property (weak, nonatomic) IBOutlet UITextView *questionCategoryView;
+@property (weak, nonatomic) IBOutlet UITextView *questionCategoryLabel;
+
 
 @end

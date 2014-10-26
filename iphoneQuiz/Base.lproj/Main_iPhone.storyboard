@@ -95,10 +95,10 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="xsw-Mc-iXp"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4SE-Zt-efE">
-                                <rect key="frame" x="78" y="72" width="165" height="27"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u95-2H-SnM">
+                                <rect key="frame" x="93" y="72" width="131" height="20"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -108,7 +108,7 @@
                     <connections>
                         <outlet property="answerInputTextfield" destination="2HY-YE-TN9" id="WKv-m8-x6Z"/>
                         <outlet property="progressLabel" destination="GA7-sh-Kn9" id="hkh-Ra-uWu"/>
-                        <outlet property="questionCategoryView" destination="4SE-Zt-efE" id="pdR-Au-U5C"/>
+                        <outlet property="questionCategoryLabel" destination="u95-2H-SnM" id="3Ex-WE-gcX"/>
                         <outlet property="questionProgressBar" destination="KuZ-w8-l6r" id="aDP-cM-1Ot"/>
                         <outlet property="questionTextView" destination="QJi-wo-Duf" id="ade-2n-Ulw"/>
                     </connections>
@@ -374,9 +374,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sy3-5l-gLW"/>
-        <segue reference="xsw-Mc-iXp"/>
+        <segue reference="ow2-fT-hXJ"/>
         <segue reference="hA7-8g-cPV"/>
         <segue reference="KI2-vS-1Kh"/>
+        <segue reference="xsw-Mc-iXp"/>
     </inferredMetricsTieBreakers>
 </document>
