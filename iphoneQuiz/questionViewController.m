@@ -177,6 +177,7 @@
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    [self.view endEditing:YES];
     if ([[self.answerInputTextfield.text lowercaseString] isEqualToString:[answer lowercaseString]]){
         gotAnswerCorrect = true;
     }
