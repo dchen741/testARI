@@ -47,6 +47,9 @@
         NSMutableArray *contestMispelled = iphoneApp[@"contestMispelled"];
         NSMutableArray *contestIncorrect = iphoneApp[@"contestIncorrect"];
         NSMutableArray *contestObsolete = iphoneApp[@"contestObsolete"];
+        NSMutableArray *contestAnswers = iphoneApp[@"contestAnswers"];
+        NSMutableArray *contestCorrect = iphoneApp[@"contestCorrect"];
+        NSString *pendingContest = iphoneApp[@"pendingContest"];
         NSMutableArray *questionArray = [[NSMutableArray alloc] init];
         
         if([self.CONTESTED intValue] == 1){
@@ -55,10 +58,13 @@
         else if ([self.CONTESTED intValue] == 2){
             [contestIncorrect addObject:self.questionNumber];
         }
-        else {
+        else if ([self.CONTESTED intValue] == 3){
             [contestObsolete addObject:self.questionNumber];
         }
-        
+        else {
+            [contestCorrect addObject:self.questionNumber];
+        }
+        [contestAnswers addObject:pendingContest];
         
         int n = 0;
         NSDateFormatter *dateComparisonFormatter = [[NSDateFormatter alloc] init];
@@ -99,12 +105,14 @@
                 [sortedJOLArray addObject:temp.JOL];
                 //NSLog(@"%d",[sortedQuestionArray[i] integerValue]);
         }
-            
+        
         iphoneApp[@"contestMispelled"]= contestMispelled;
         iphoneApp[@"contestIncorrect"]= contestIncorrect;
         iphoneApp[@"contestObsolete"]= contestObsolete;
         iphoneApp[@"correctJOLArray"] = sortedJOLArray;
+        iphoneApp[@"contestCorrect"]= contestCorrect;
         iphoneApp[@"correctAnswerArray"] = sortedQuestionArray;
+        iphoneApp[@"contestAnswers"] = contestAnswers;
         [iphoneApp saveInBackground];
 
         NSInteger numberOfBadges = [UIApplication sharedApplication].applicationIconBadgeNumber;
@@ -136,6 +144,11 @@
 - (IBAction)obsoleteAnswer:(id)sender {
     self.JOL = @1;
     self.CONTESTED = @3;
+    [self nextViewFunction:(id)sender];
+}
+- (IBAction)correctAnswer:(id)sender {
+    self.JOL = @1;
+    self.CONTESTED = @4;
     [self nextViewFunction:(id)sender];
 }
 

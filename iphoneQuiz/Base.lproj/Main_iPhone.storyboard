@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDt-mk-dNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1099" y="782"/>
+            <point key="canvasLocation" x="1141" y="784"/>
         </scene>
         <!--Contest View Controller-->
         <scene sceneID="vcH-3k-ow7">
@@ -304,7 +304,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC2-AK-DNb">
-                                <rect key="frame" x="95" y="209" width="131" height="30"/>
+                                <rect key="frame" x="95" y="192" width="131" height="30"/>
                                 <state key="normal" title="Answer is incorrect">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -313,12 +313,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMm-0t-foq">
-                                <rect key="frame" x="95" y="269" width="130" height="30"/>
+                                <rect key="frame" x="95" y="235" width="130" height="30"/>
                                 <state key="normal" title="Answer is obsolete">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="obsoleteAnswer:" destination="SLC-fg-kS3" eventType="touchUpInside" id="Ta0-CN-lQH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4H-dL-mHh">
+                                <rect key="frame" x="73" y="280" width="175" height="30"/>
+                                <state key="normal" title="My answer is also correct">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="correctAnswer:" destination="SLC-fg-kS3" eventType="touchUpInside" id="Dpy-AK-1d4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -332,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PG8-Az-vDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="488" y="1116"/>
+            <point key="canvasLocation" x="494" y="1344"/>
         </scene>
         <!--Inish View Controller-->
         <scene sceneID="GOU-nC-fT2">
@@ -373,9 +382,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="xsw-Mc-iXp"/>
         <segue reference="jPO-nT-33g"/>
-        <segue reference="hA7-8g-cPV"/>
+        <segue reference="iwG-BM-Tox"/>
+        <segue reference="DYi-0N-jSW"/>
         <segue reference="FD6-zY-9Vu"/>
     </inferredMetricsTieBreakers>
 </document>

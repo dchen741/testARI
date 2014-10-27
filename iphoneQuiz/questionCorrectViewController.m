@@ -225,6 +225,8 @@
         [iphoneApp saveInBackground];
         self.questionProgressBar.progress = [questionsToday integerValue];
         self.progressLabel.text = [NSString stringWithFormat:@"%i of 5 questions answered",[questionsToday integerValue]];
+        iphoneApp[@"pendingContest"] = self.userAnswer;
+        [iphoneApp saveInBackground];
     }];
     
     if (self.gotAnswerCorrect == true){

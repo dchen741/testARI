@@ -12,6 +12,7 @@
     NSString *wholeQuestion;
     NSString *question;
     NSString *answer;
+    NSString *userAnswer;
     int currentQuestion;
     NSNumber *questionNumber;
     bool gotAnswerCorrect;

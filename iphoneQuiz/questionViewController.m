@@ -177,6 +177,7 @@
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    userAnswer = [self.answerInputTextfield.text lowercaseString];
     [self.view endEditing:YES];
     if ([[self.answerInputTextfield.text lowercaseString] isEqualToString:[answer lowercaseString]]){
         gotAnswerCorrect = true;
@@ -186,6 +187,7 @@
     if([segue.identifier isEqualToString:@"questionSegue"])
     {
         transferViewController.correctAnswerString = wholeQuestion;
+        transferViewController.userAnswer = userAnswer;
         transferViewController.gotAnswerCorrect = gotAnswerCorrect;
         transferViewController.progressBarFill = progressBarFill;
         transferViewController.questionNumber = questionNumber;
