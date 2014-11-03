@@ -11,6 +11,8 @@
 		956044D319FE226D00175B48 /* rsz_1iphoneicon_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 956044D219FE226D00175B48 /* rsz_1iphoneicon_big.png */; };
 		956044D519FE227300175B48 /* rsz_iphoneicon_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 956044D419FE227300175B48 /* rsz_iphoneicon_big.png */; };
 		95AA2BC819B6BAC100E4DD8A /* contestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AA2BC719B6BAC100E4DD8A /* contestViewController.m */; };
+		95C149211A071B980082E91D /* finalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C149201A071B980082E91D /* finalViewController.m */; };
+		95C149231A07295F0082E91D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C149221A07295F0082E91D /* Main_iPhone.storyboard */; };
 		95D420C619E1288C002F6C18 /* categories.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95D420C519E1288C002F6C18 /* categories.txt */; };
 		B19CE225197CF5B50071379C /* ARI-LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE222197CF5B50071379C /* ARI-LOGO.png */; };
 		B19CE226197CF5B50071379C /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = B19CE223197CF5B50071379C /* checkmark.png */; };
@@ -55,7 +57,6 @@
 		B1DD1B0619731305009C2B6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1DD1B0419731305009C2B6E /* InfoPlist.strings */; };
 		B1DD1B0819731305009C2B6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DD1B0719731305009C2B6E /* main.m */; };
 		B1DD1B0C19731305009C2B6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DD1B0B19731305009C2B6E /* AppDelegate.m */; };
-		B1DD1B0F19731305009C2B6E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DD1B0D19731305009C2B6E /* Main_iPhone.storyboard */; };
 		B1DD1B1219731305009C2B6E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DD1B1019731305009C2B6E /* Main_iPad.storyboard */; };
 		B1DD1B1519731305009C2B6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DD1B1419731305009C2B6E /* ViewController.m */; };
 		B1DD1B1719731305009C2B6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DD1B1619731305009C2B6E /* Images.xcassets */; };
@@ -83,6 +84,9 @@
 		956044D419FE227300175B48 /* rsz_iphoneicon_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_iphoneicon_big.png; sourceTree = "<group>"; };
 		95AA2BC619B6BAC100E4DD8A /* contestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contestViewController.h; sourceTree = "<group>"; };
 		95AA2BC719B6BAC100E4DD8A /* contestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contestViewController.m; sourceTree = "<group>"; };
+		95C1491F1A071B980082E91D /* finalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = finalViewController.h; sourceTree = "<group>"; };
+		95C149201A071B980082E91D /* finalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = finalViewController.m; sourceTree = "<group>"; };
+		95C149221A07295F0082E91D /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		95D420C519E1288C002F6C18 /* categories.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = categories.txt; sourceTree = "<group>"; };
 		B19CE222197CF5B50071379C /* ARI-LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ARI-LOGO.png"; path = "images/ARI-LOGO.png"; sourceTree = "<group>"; };
 		B19CE223197CF5B50071379C /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark.png; path = images/checkmark.png; sourceTree = "<group>"; };
@@ -135,7 +139,6 @@
 		B1DD1B0919731305009C2B6E /* iphoneQuiz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iphoneQuiz-Prefix.pch"; sourceTree = "<group>"; };
 		B1DD1B0A19731305009C2B6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1DD1B0B19731305009C2B6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B1DD1B0E19731305009C2B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B1DD1B1119731305009C2B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B1DD1B1319731305009C2B6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B1DD1B1419731305009C2B6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -266,7 +269,7 @@
 				B19DC9F21982E76700A614D4 /* QuestionClass.m */,
 				B1DD1B0A19731305009C2B6E /* AppDelegate.h */,
 				B1DD1B0B19731305009C2B6E /* AppDelegate.m */,
-				B1DD1B0D19731305009C2B6E /* Main_iPhone.storyboard */,
+				95C149221A07295F0082E91D /* Main_iPhone.storyboard */,
 				B1DD1B1019731305009C2B6E /* Main_iPad.storyboard */,
 				B1DD1B1319731305009C2B6E /* ViewController.h */,
 				B1DD1B1419731305009C2B6E /* ViewController.m */,
@@ -276,6 +279,8 @@
 				B1DD1B3A19733C1D009C2B6E /* questionCorrectViewController.m */,
 				B1A5D9EC197F281400D66891 /* FInishViewController.h */,
 				B1A5D9ED197F281400D66891 /* FInishViewController.m */,
+				95C1491F1A071B980082E91D /* finalViewController.h */,
+				95C149201A071B980082E91D /* finalViewController.m */,
 				95AA2BC619B6BAC100E4DD8A /* contestViewController.h */,
 				95AA2BC719B6BAC100E4DD8A /* contestViewController.m */,
 				B1DD1B1619731305009C2B6E /* Images.xcassets */,
@@ -402,8 +407,8 @@
 				956044D319FE226D00175B48 /* rsz_1iphoneicon_big.png in Resources */,
 				B19CE226197CF5B50071379C /* checkmark.png in Resources */,
 				B1DD1B1719731305009C2B6E /* Images.xcassets in Resources */,
+				95C149231A07295F0082E91D /* Main_iPhone.storyboard in Resources */,
 				95D420C619E1288C002F6C18 /* categories.txt in Resources */,
-				B1DD1B0F19731305009C2B6E /* Main_iPhone.storyboard in Resources */,
 				B1DD1B0619731305009C2B6E /* InfoPlist.strings in Resources */,
 				B19CE227197CF5B50071379C /* xmark.png in Resources */,
 			);
@@ -441,6 +446,7 @@
 				B1DD1B3819731935009C2B6E /* questionViewController.m in Sources */,
 				B1AC8B16197602880018DAD3 /* IQTitleBarButtonItem.m in Sources */,
 				B1AC8B1E197602880018DAD3 /* IQUIWindow+Hierarchy.m in Sources */,
+				95C149211A071B980082E91D /* finalViewController.m in Sources */,
 				B1DD1B0819731305009C2B6E /* main.m in Sources */,
 				B1AC8B18197602880018DAD3 /* IQToolbar.m in Sources */,
 			);
@@ -481,14 +487,6 @@
 				B1DD1B0519731305009C2B6E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B1DD1B0D19731305009C2B6E /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1DD1B0E19731305009C2B6E /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		B1DD1B1019731305009C2B6E /* Main_iPad.storyboard */ = {
@@ -543,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -577,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

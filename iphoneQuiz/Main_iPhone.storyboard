@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -266,11 +267,12 @@
                         <outlet property="questionProgressBar" destination="4I7-7A-htn" id="WKT-wu-dle"/>
                         <segue destination="oki-5a-N2P" kind="modal" identifier="finishSegue" id="KI2-vS-1Kh"/>
                         <segue destination="Awl-4c-8Ox" kind="modal" identifier="nextQuestionSegue" id="ow2-fT-hXJ"/>
+                        <segue destination="QFK-jk-epq" kind="modal" identifier="finalSegue" id="eZk-Py-97P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDt-mk-dNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1141" y="784"/>
+            <point key="canvasLocation" x="1449" y="808"/>
         </scene>
         <!--Contest View Controller-->
         <scene sceneID="vcH-3k-ow7">
@@ -343,6 +345,41 @@
             </objects>
             <point key="canvasLocation" x="494" y="1344"/>
         </scene>
+        <!--Final View Controller-->
+        <scene sceneID="MPM-tQ-Xt8">
+            <objects>
+                <viewController id="QFK-jk-epq" customClass="finalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4cM-uj-tNp"/>
+                        <viewControllerLayoutGuide type="bottom" id="zPs-aH-Gzn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bfa-b2-bmc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-Cu-eq2">
+                                <rect key="frame" x="137" y="213" width="39" height="30"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="wQQ-bl-YKa"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You have done all the possible questions for today! Please check back tomorrow for more questions." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pPG-LE-ppb">
+                                <rect key="frame" x="41" y="120" width="239" height="69"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhM-QW-MaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-949" y="916"/>
+        </scene>
         <!--Inish View Controller-->
         <scene sceneID="GOU-nC-fT2">
             <objects>
@@ -370,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4i-f2-EW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-93" y="854"/>
+            <point key="canvasLocation" x="-142" y="962"/>
         </scene>
     </scenes>
     <resources>
@@ -382,9 +419,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="jPO-nT-33g"/>
-        <segue reference="iwG-BM-Tox"/>
+        <segue reference="ow2-fT-hXJ"/>
+        <segue reference="hA7-8g-cPV"/>
+        <segue reference="KI2-vS-1Kh"/>
         <segue reference="DYi-0N-jSW"/>
-        <segue reference="FD6-zY-9Vu"/>
     </inferredMetricsTieBreakers>
 </document>

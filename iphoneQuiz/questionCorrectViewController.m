@@ -153,7 +153,54 @@
         [[UIApplication sharedApplication] setApplicationIconBadgeNumber:numberOfBadges];
         
         NSNumber *questionsToday = iphoneApp[@"questionsToday"];
-        if ([questionsToday integerValue] == 5){
+        
+        PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
+        [query getObjectInBackgroundWithId:appDelegate.rowID block:^(PFObject *iphoneApp, NSError *error) {
+            NSArray *correctDateArray = iphoneApp[@"correctDateArray"];
+            NSArray *incorrectDateArray = iphoneApp[@"incorrectDateArray"];
+            NSArray *questionPoolArray = iphoneApp[@"questionPoolArray"];
+            int incorrectSize=0;
+            for (int i=0;i<[incorrectDateArray count];i++){
+                NSDate *oneDayAhead = incorrectDateArray[i];
+                oneDayAhead = [oneDayAhead dateByAddingTimeInterval:60*60*19];
+                //if oneDayAhead is after today
+                if ([oneDayAhead compare:estToday] == NSOrderedAscending){
+                    incorrectSize++;
+                    NSLog(@"onedayahead %@",oneDayAhead);
+                }
+            }
+            int correctSize=0;
+            for (int i=0;i<[correctDateArray count];i++){
+                NSDate *threeDaysAhead = correctDateArray[i];
+                threeDaysAhead = [threeDaysAhead dateByAddingTimeInterval:(60*60*24*2 + 60*60*19)];
+                //if threeDaysAhead is after today
+                if ([threeDaysAhead compare:estToday] == NSOrderedAscending){
+                    correctSize++;
+                    NSLog(@"3dayahead %@",threeDaysAhead);
+                }
+            }
+            [NSThread sleepForTimeInterval:.5];
+            NSNumber *pendQuestion = iphoneApp[@"pendingQuestions"];
+            self.questionsLeft = false;
+            if (incorrectSize > 0){
+                self.questionsLeft = true;
+            }
+            else if (correctSize > 0){
+                self.questionsLeft = true;
+            }
+            else if ([pendQuestion intValue] > -1){
+                self.questionsLeft = true;
+            }
+            else {
+                if ([questionPoolArray count] > 0){
+                    self.questionsLeft = true;
+                }
+            }
+        }];
+        if (!self.questionsLeft){
+            [self performSegueWithIdentifier:@"finalSegue" sender:sender];
+        }
+        else if ([questionsToday integerValue] == 5){
             [self performSegueWithIdentifier:@"finishSegue" sender:sender];
         }
         else {

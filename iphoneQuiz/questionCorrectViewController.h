@@ -16,6 +16,7 @@
 @property (strong, nonatomic) NSString *correctAnswerString;
 @property (strong, nonatomic) NSString *userAnswer;
 @property (strong, nonatomic) NSNumber *questionNumber;
+@property (nonatomic, assign) BOOL questionsLeft;
 @property (strong, nonatomic) NSNumber *JOL;
 @property (nonatomic, assign) BOOL gotAnswerCorrect;
 @property (weak, nonatomic) IBOutlet UITextView *answerTextView;
