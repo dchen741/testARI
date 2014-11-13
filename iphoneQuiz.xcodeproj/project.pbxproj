@@ -10,7 +10,10 @@
 		9544817319AB05BC00F71FED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E7519808E97009C7775 /* Parse.framework */; };
 		956044D319FE226D00175B48 /* rsz_1iphoneicon_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 956044D219FE226D00175B48 /* rsz_1iphoneicon_big.png */; };
 		956044D519FE227300175B48 /* rsz_iphoneicon_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 956044D419FE227300175B48 /* rsz_iphoneicon_big.png */; };
+		956EF91E1A0CB12000DACC64 /* Main_iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956EF91D1A0CB12000DACC64 /* Main_iPhone4.storyboard */; };
 		95AA2BC819B6BAC100E4DD8A /* contestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AA2BC719B6BAC100E4DD8A /* contestViewController.m */; };
+		95AB11CC1A1444DF00CC4D2C /* questionsBeta2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95AB11CB1A1444DF00CC4D2C /* questionsBeta2.txt */; };
+		95AB11CE1A1444E600CC4D2C /* categoriesBeta2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95AB11CD1A1444E600CC4D2C /* categoriesBeta2.txt */; };
 		95C149211A071B980082E91D /* finalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C149201A071B980082E91D /* finalViewController.m */; };
 		95C149231A07295F0082E91D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C149221A07295F0082E91D /* Main_iPhone.storyboard */; };
 		95D420C619E1288C002F6C18 /* categories.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95D420C519E1288C002F6C18 /* categories.txt */; };
@@ -82,8 +85,11 @@
 /* Begin PBXFileReference section */
 		956044D219FE226D00175B48 /* rsz_1iphoneicon_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_1iphoneicon_big.png; sourceTree = "<group>"; };
 		956044D419FE227300175B48 /* rsz_iphoneicon_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_iphoneicon_big.png; sourceTree = "<group>"; };
+		956EF91D1A0CB12000DACC64 /* Main_iPhone4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone4.storyboard; sourceTree = "<group>"; };
 		95AA2BC619B6BAC100E4DD8A /* contestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contestViewController.h; sourceTree = "<group>"; };
 		95AA2BC719B6BAC100E4DD8A /* contestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contestViewController.m; sourceTree = "<group>"; };
+		95AB11CB1A1444DF00CC4D2C /* questionsBeta2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = questionsBeta2.txt; sourceTree = "<group>"; };
+		95AB11CD1A1444E600CC4D2C /* categoriesBeta2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = categoriesBeta2.txt; sourceTree = "<group>"; };
 		95C1491F1A071B980082E91D /* finalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = finalViewController.h; sourceTree = "<group>"; };
 		95C149201A071B980082E91D /* finalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = finalViewController.m; sourceTree = "<group>"; };
 		95C149221A07295F0082E91D /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -270,6 +276,7 @@
 				B1DD1B0A19731305009C2B6E /* AppDelegate.h */,
 				B1DD1B0B19731305009C2B6E /* AppDelegate.m */,
 				95C149221A07295F0082E91D /* Main_iPhone.storyboard */,
+				956EF91D1A0CB12000DACC64 /* Main_iPhone4.storyboard */,
 				B1DD1B1019731305009C2B6E /* Main_iPad.storyboard */,
 				B1DD1B1319731305009C2B6E /* ViewController.h */,
 				B1DD1B1419731305009C2B6E /* ViewController.m */,
@@ -292,6 +299,8 @@
 		B1DD1B0219731305009C2B6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				95AB11CD1A1444E600CC4D2C /* categoriesBeta2.txt */,
+				95AB11CB1A1444DF00CC4D2C /* questionsBeta2.txt */,
 				95D420C519E1288C002F6C18 /* categories.txt */,
 				B19DC9F6198311C600A614D4 /* questions.txt */,
 				956044D219FE226D00175B48 /* rsz_1iphoneicon_big.png */,
@@ -404,11 +413,14 @@
 				B19DC9F7198311C600A614D4 /* questions.txt in Resources */,
 				B19CE225197CF5B50071379C /* ARI-LOGO.png in Resources */,
 				B1DD1B1219731305009C2B6E /* Main_iPad.storyboard in Resources */,
+				95AB11CC1A1444DF00CC4D2C /* questionsBeta2.txt in Resources */,
 				956044D319FE226D00175B48 /* rsz_1iphoneicon_big.png in Resources */,
 				B19CE226197CF5B50071379C /* checkmark.png in Resources */,
 				B1DD1B1719731305009C2B6E /* Images.xcassets in Resources */,
 				95C149231A07295F0082E91D /* Main_iPhone.storyboard in Resources */,
+				95AB11CE1A1444E600CC4D2C /* categoriesBeta2.txt in Resources */,
 				95D420C619E1288C002F6C18 /* categories.txt in Resources */,
+				956EF91E1A0CB12000DACC64 /* Main_iPhone4.storyboard in Resources */,
 				B1DD1B0619731305009C2B6E /* InfoPlist.strings in Resources */,
 				B19CE227197CF5B50071379C /* xmark.png in Resources */,
 			);
@@ -541,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -575,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

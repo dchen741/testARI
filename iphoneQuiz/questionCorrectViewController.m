@@ -29,7 +29,12 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
     [query getObjectInBackgroundWithId:appDelegate.rowID block:^(PFObject *iphoneApp, NSError *error) {
-        NSDate *estToday = [[NSDate date] dateByAddingTimeInterval:-60*60*5];
+        NSDate *estToday = [NSDate date];
+        unsigned int flags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+        NSCalendar* calendar = [NSCalendar currentCalendar];
+        NSDateComponents* components = [calendar components:flags fromDate:estToday];
+        estToday = [calendar dateFromComponents:components];
+        estToday = [estToday dateByAddingTimeInterval:-60*60*5];
         NSLog(@"today %@",estToday);
         iphoneApp[@"pendingQuestions"] = @-1;
         [iphoneApp saveInBackground];
@@ -108,9 +113,9 @@
             [dateComparisonFormatter setDateFormat:@"yyyy-MM-dd"];
             NSMutableArray *sortedQuestionArray = [[NSMutableArray alloc] init];
             NSMutableArray *sortedJOLArray = [[NSMutableArray alloc] init];
+            
             //for datearray, if date = today, n++
             for (int i=0;i<[dateArray count];i++){
-                //NSLog(@"%@",[dateComparisonFormatter stringFromDate:dateArray[i]]);
                 QuestionClass *question = [[QuestionClass alloc]initWithQuestion:incorrectArray[i] andJOL:JOLArray[i] andDate:dateArray[i]];
                 if ([[dateComparisonFormatter stringFromDate:estToday] isEqualToString:[dateComparisonFormatter stringFromDate:dateArray[i]]]){
                     //NSLog(@"same date");
@@ -147,7 +152,6 @@
             iphoneApp[@"incorrectAnswerArray"] = sortedQuestionArray;
             [iphoneApp saveInBackground];
         }
-        
         NSInteger numberOfBadges = [UIApplication sharedApplication].applicationIconBadgeNumber;
         numberOfBadges -=1;
         [[UIApplication sharedApplication] setApplicationIconBadgeNumber:numberOfBadges];
@@ -162,7 +166,7 @@
             int incorrectSize=0;
             for (int i=0;i<[incorrectDateArray count];i++){
                 NSDate *oneDayAhead = incorrectDateArray[i];
-                oneDayAhead = [oneDayAhead dateByAddingTimeInterval:60*60*19];
+                oneDayAhead = [oneDayAhead dateByAddingTimeInterval:60*60*24];
                 //if oneDayAhead is after today
                 if ([oneDayAhead compare:estToday] == NSOrderedAscending){
                     incorrectSize++;
@@ -172,7 +176,7 @@
             int correctSize=0;
             for (int i=0;i<[correctDateArray count];i++){
                 NSDate *threeDaysAhead = correctDateArray[i];
-                threeDaysAhead = [threeDaysAhead dateByAddingTimeInterval:(60*60*24*2 + 60*60*19)];
+                threeDaysAhead = [threeDaysAhead dateByAddingTimeInterval:(60*60*24*3)];
                 //if threeDaysAhead is after today
                 if ([threeDaysAhead compare:estToday] == NSOrderedAscending){
                     correctSize++;
@@ -196,17 +200,17 @@
                     self.questionsLeft = true;
                 }
             }
+            if (!self.questionsLeft){
+                [self performSegueWithIdentifier:@"finalSegue" sender:sender];
+            }
+            else if ([questionsToday integerValue] == 5){
+                [self performSegueWithIdentifier:@"finishSegue" sender:sender];
+            }
+            else {
+                [self performSegueWithIdentifier:@"nextQuestionSegue" sender:sender];
+            }
+            [iphoneApp saveInBackground];
         }];
-        if (!self.questionsLeft){
-            [self performSegueWithIdentifier:@"finalSegue" sender:sender];
-        }
-        else if ([questionsToday integerValue] == 5){
-            [self performSegueWithIdentifier:@"finishSegue" sender:sender];
-        }
-        else {
-            [self performSegueWithIdentifier:@"nextQuestionSegue" sender:sender];
-        }
-        [iphoneApp saveInBackground];
     }];
 
 }
@@ -285,6 +289,22 @@
         self.checkCrossImageView.image = [UIImage imageNamed:@"xmark.png"];
     }
     self.answerTextView.text = self.correctAnswerString;
+    [self formatTextInTextView:(UITextView *)self.answerTextView];
+}
+
+- (void)formatTextInTextView:(UITextView *)textView
+{
+    int answerLen = [self.answer length];
+    if (self.gotAnswerCorrect){
+        NSMutableAttributedString * theString = [[NSMutableAttributedString alloc] initWithString:self.correctAnswerString];
+        [theString addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange([self.answerBoldLeft integerValue],answerLen)];
+        textView.attributedText = theString;
+    }
+    else{
+        NSMutableAttributedString * theString = [[NSMutableAttributedString alloc] initWithString:self.correctAnswerString];
+        [theString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange([self.answerBoldLeft integerValue],answerLen)];
+        textView.attributedText = theString;
+    }
 }
 
 - (void)didReceiveMemoryWarning

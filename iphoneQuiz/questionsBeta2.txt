@@ -1,0 +1,31 @@
+questionsBeta2.txt
+[Medullary] thyroid cancer is a hallmark of multiple endocrine neoplasia type II syndromes (MEN-II)
+Both forms of MEN-II are associated with mutation of the [Ret] proto-oncogene
+MEN- [I] is classically identified by pituitary adenomas, [parathyroid] hyperplasia, and neuroendocrine tumors
+Over 95% of nasopharyngeal carcinoma in endemic regions such as southeast Asia is type III and associated with [Epstein Barr] virus
+[Burkitt’s] lymphoma is a high-grade, non-Hodgkin’s B-cell tumor that is found in children and young adults in tropical Africa. 98% of cases are associated with [Epstein Barr Virus].
+One efficient and sensitive means of screening for [pheochromocytoma] is measurement of catecholamines, or metabolic products thereof, in the urine. 
+[Phenoxybenzamine] and [prazosin] are two preferred agents that block the α-adrenergic effects of the catecholamines preoperatively with pheochromocytoma. 
+MEN-[I] is associated with a mutation in the [MENIN] gene
+[Pancreatic] cancer is associated with a mutation in the [K-ras] gene
+ [CEA] is a tumor marker for [colorectal] cancer.
+[Chronic Myelocytic Leukemia] is associated with the [Philadelphia] chromosome, which is 9:22 translocation.
+[CA-125] is a tumor marker for [ovarian] cancer.
+[Neuroblastoma] is associated with a mutation in the [N-myc] gene
+[Familiar Adenomatous Poliposis] is associated with a mutation in the [APC] gene
+ [CA-19-9] is a tumor marker for [pancreatic] cancer.
+ [Beta-HCG] is a tumor marker for [Choriocarcinoma/testicular] cancer.
+[GIST] is associated with a mutation in the [C-kit] gene
+[Carcinoids] are indolent malignant neuroendocrine tumors that arise from the [enterochromaffin](Kulchitsky) cells at the base of the crypts of [Lieberkuhn]
+Within the gastrointestinal tract, carcinoids are most often identified in the [appendix], followed by the [small bowel].
+The liver contains large amounts of monoamine oxidase which deactivates [serotonin], therefore in order to present with carcinoid syndrome  patients must have metastatic disease in either the liver or retroperitoneum
+[Flushing] is the most common finding in carcinoid syndrome and affects approximately 80% of syndrome patients. Diarrhea, found in 75% of patients, seems to be caused by [serotonin] release
+In typical cases of appendicitis, when the organ is located within the right lower quadrant of the abdomen, patients display tenderness over [McBurney] point 
+[Buschke-Lowenstein] tumor typically manifests as a large, slow-growing, painful, wartlike anal growth that is relatively soft and has a cauliflowerlike appearance.
+[Lynch] syndrome is an autosomal dominant condition characterized by a combination of cancer in the [colon], female genital tract (ovaries, endometrium, and uterus), and occasionally other sites. 
+Incontinence in rectal prolapse is caused by damage to the [pudendal] nerve
+The [Amsterdam] criteria for [Lynch] syndrome include: [3] relatives with colorectal cancer (one is a first-degree relative); [2] generations are involved, and [1] case appears before [50 years of age] 
+According to the BIRADS clasification a  normal mammography is given a grade of [1]
+According to the BIRADS clasification a  benign finding on mammography is given a grade of [2]
+According to the BIRADS clasification a  probably benign finding with a risk of malignancy of 1-2% on mammography is given a grade of [3]
+According to the BIRADS clasification a  suspicious finding on mammography is given a grade of [4] and a [biopsy] is recommended

@@ -14,6 +14,8 @@
     NSString *answer;
     NSString *userAnswer;
     int currentQuestion;
+    NSNumber *answerBoldLeft;
+    NSNumber *answerBoldRight;
     NSNumber *questionNumber;
     bool gotAnswerCorrect;
     float progressBarFill;

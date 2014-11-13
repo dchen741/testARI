@@ -15,7 +15,10 @@
 
 @property (strong, nonatomic) NSString *correctAnswerString;
 @property (strong, nonatomic) NSString *userAnswer;
+@property (strong, nonatomic) NSString *answer;
 @property (strong, nonatomic) NSNumber *questionNumber;
+@property (strong, nonatomic) NSNumber *answerBoldLeft;
+@property (strong, nonatomic) NSNumber *answerBoldRight;
 @property (nonatomic, assign) BOOL questionsLeft;
 @property (strong, nonatomic) NSNumber *JOL;
 @property (nonatomic, assign) BOOL gotAnswerCorrect;
