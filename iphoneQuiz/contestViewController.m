@@ -152,6 +152,21 @@
     [self nextViewFunction:(id)sender];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    contestViewController *transferViewController = segue.destinationViewController;
+    if([segue.identifier isEqualToString:@"contestBackSegue"])
+    {
+        transferViewController.correctAnswerString = self.correctAnswerString;
+        transferViewController.answerBoldLeft = self.answerBoldLeft;
+        transferViewController.answerBoldRight = self.answerBoldRight;
+        transferViewController.answer = self.answer;
+        transferViewController.userAnswer = self.userAnswer;
+        transferViewController.gotAnswerCorrect = self.gotAnswerCorrect;
+        transferViewController.progressBarFill = self.progressBarFill;
+        transferViewController.questionNumber = self.questionNumber;
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

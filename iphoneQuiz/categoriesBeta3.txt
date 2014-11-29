@@ -1,0 +1,16 @@
+categoriesBeta2.txt
+Anatomy
+Anesthesia
+Appendix
+Breast
+Cardiothoracic
+Coagulation and Transfusions
+Colorectal
+Critical Care
+Endocrine
+Esophagus
+Eponymous Medical Signs
+Fractures
+GI Physiology
+Hepatobiliary
+Hernia

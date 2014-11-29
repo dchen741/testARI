@@ -2,11 +2,13 @@
 //  questionCorrectViewController.m
 //  iphoneQuiz
 //
+//  Modified by Dennis Chen throughout 2014
 //  Created by Ivan Seto on 7/13/14.
 //  Copyright (c) 2014 Ivan Seto. All rights reserved.
 //
 
 #import "questionCorrectViewController.h"
+#import "contestViewController.h"
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 
@@ -304,6 +306,21 @@
         NSMutableAttributedString * theString = [[NSMutableAttributedString alloc] initWithString:self.correctAnswerString];
         [theString addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange([self.answerBoldLeft integerValue],answerLen)];
         textView.attributedText = theString;
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    contestViewController *transferViewController = segue.destinationViewController;
+    if([segue.identifier isEqualToString:@"contestSegue"])
+    {
+        transferViewController.correctAnswerString = self.correctAnswerString;
+        transferViewController.answerBoldLeft = self.answerBoldLeft;
+        transferViewController.answerBoldRight = self.answerBoldRight;
+        transferViewController.answer = self.answer;
+        transferViewController.userAnswer = self.userAnswer;
+        transferViewController.gotAnswerCorrect = self.gotAnswerCorrect;
+        transferViewController.progressBarFill = self.progressBarFill;
+        transferViewController.questionNumber = self.questionNumber;
     }
 }
 

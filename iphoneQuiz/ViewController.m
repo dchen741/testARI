@@ -69,7 +69,7 @@
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
-    
+    [NSThread sleepForTimeInterval:1];
 
     //[NSTimer scheduledTimerWithTimeInterval: 2 target: self selector: @selector(myButtonMethod) userInfo: nil repeats: NO];
     

@@ -10,6 +10,8 @@
 		9544817319AB05BC00F71FED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A65E7519808E97009C7775 /* Parse.framework */; };
 		956044D319FE226D00175B48 /* rsz_1iphoneicon_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 956044D219FE226D00175B48 /* rsz_1iphoneicon_big.png */; };
 		956044D519FE227300175B48 /* rsz_iphoneicon_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 956044D419FE227300175B48 /* rsz_iphoneicon_big.png */; };
+		956D30631A1FE58A0078EF7A /* questionsBeta3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 956D30621A1FE58A0078EF7A /* questionsBeta3.txt */; };
+		956D30651A1FE5970078EF7A /* categoriesBeta3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 956D30641A1FE5970078EF7A /* categoriesBeta3.txt */; };
 		956EF91E1A0CB12000DACC64 /* Main_iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956EF91D1A0CB12000DACC64 /* Main_iPhone4.storyboard */; };
 		95AA2BC819B6BAC100E4DD8A /* contestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AA2BC719B6BAC100E4DD8A /* contestViewController.m */; };
 		95AB11CC1A1444DF00CC4D2C /* questionsBeta2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95AB11CB1A1444DF00CC4D2C /* questionsBeta2.txt */; };
@@ -85,6 +87,8 @@
 /* Begin PBXFileReference section */
 		956044D219FE226D00175B48 /* rsz_1iphoneicon_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_1iphoneicon_big.png; sourceTree = "<group>"; };
 		956044D419FE227300175B48 /* rsz_iphoneicon_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_iphoneicon_big.png; sourceTree = "<group>"; };
+		956D30621A1FE58A0078EF7A /* questionsBeta3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = questionsBeta3.txt; sourceTree = "<group>"; };
+		956D30641A1FE5970078EF7A /* categoriesBeta3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = categoriesBeta3.txt; sourceTree = "<group>"; };
 		956EF91D1A0CB12000DACC64 /* Main_iPhone4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone4.storyboard; sourceTree = "<group>"; };
 		95AA2BC619B6BAC100E4DD8A /* contestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contestViewController.h; sourceTree = "<group>"; };
 		95AA2BC719B6BAC100E4DD8A /* contestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contestViewController.m; sourceTree = "<group>"; };
@@ -299,6 +303,8 @@
 		B1DD1B0219731305009C2B6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				956D30641A1FE5970078EF7A /* categoriesBeta3.txt */,
+				956D30621A1FE58A0078EF7A /* questionsBeta3.txt */,
 				95AB11CD1A1444E600CC4D2C /* categoriesBeta2.txt */,
 				95AB11CB1A1444DF00CC4D2C /* questionsBeta2.txt */,
 				95D420C519E1288C002F6C18 /* categories.txt */,
@@ -411,6 +417,7 @@
 				956044D519FE227300175B48 /* rsz_iphoneicon_big.png in Resources */,
 				B1AC8B0C197602880018DAD3 /* IQKeyboardManager.bundle in Resources */,
 				B19DC9F7198311C600A614D4 /* questions.txt in Resources */,
+				956D30651A1FE5970078EF7A /* categoriesBeta3.txt in Resources */,
 				B19CE225197CF5B50071379C /* ARI-LOGO.png in Resources */,
 				B1DD1B1219731305009C2B6E /* Main_iPad.storyboard in Resources */,
 				95AB11CC1A1444DF00CC4D2C /* questionsBeta2.txt in Resources */,
@@ -418,6 +425,7 @@
 				B19CE226197CF5B50071379C /* checkmark.png in Resources */,
 				B1DD1B1719731305009C2B6E /* Images.xcassets in Resources */,
 				95C149231A07295F0082E91D /* Main_iPhone.storyboard in Resources */,
+				956D30631A1FE58A0078EF7A /* questionsBeta3.txt in Resources */,
 				95AB11CE1A1444E600CC4D2C /* categoriesBeta2.txt in Resources */,
 				95D420C619E1288C002F6C18 /* categories.txt in Resources */,
 				956EF91E1A0CB12000DACC64 /* Main_iPhone4.storyboard in Resources */,

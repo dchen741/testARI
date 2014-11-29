@@ -2,6 +2,7 @@
 //  questionViewController.m
 //  iphoneQuiz
 //
+//  Modified by Dennis Chen throughout 2014
 //  Created by Ivan Seto on 7/13/14.
 //  Copyright (c) 2014 Ivan Seto. All rights reserved.
 //
@@ -30,7 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [NSThread sleepForTimeInterval:.3];
+    [NSThread sleepForTimeInterval:.5];
+    [self.questionTextView setFont:[UIFont systemFontOfSize:14]];
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     NSDate *estToday = [NSDate date];
     unsigned int flags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
@@ -38,8 +40,8 @@
     NSDateComponents* components = [calendar components:flags fromDate:estToday];
     estToday = [calendar dateFromComponents:components];
     estToday = [estToday dateByAddingTimeInterval:(-60*60*5)+1];
-    NSString *questionString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"questionsBeta2" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
-    NSString *questionCategory = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"categoriesBeta2" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
+    NSString *questionString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"questionsBeta3" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
+    NSString *questionCategory = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"categoriesBeta3" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
     NSArray * questionArray = [questionString componentsSeparatedByString:@"\n"];
     NSArray * questionCategoryArray =[questionCategory componentsSeparatedByString:@"\n"];
     
@@ -79,25 +81,7 @@
         NSLog(@"Today is the date: %@",estToday);
         [NSThread sleepForTimeInterval:.5];
         NSNumber *pendQuestion = iphoneApp[@"pendingQuestions"];
-        if (incorrectSize > 0){
-            NSMutableArray *incorrectAnswerArray = iphoneApp[@"incorrectAnswerArray"];
-            NSMutableArray *incorrectDateArray = iphoneApp[@"incorrectDateArray"];
-            NSMutableArray *incorrectJOLArray = iphoneApp[@"incorrectJOLArray"];
-            questionNumber = incorrectAnswerArray[0];
-            NSLog(@"remove %@ from incorrect",questionNumber);
-            [incorrectDateArray removeObjectAtIndex:0];
-            [incorrectJOLArray removeObjectAtIndex:0];
-            [iphoneApp removeObject:questionNumber forKey:@"incorrectAnswerArray"];
-            iphoneApp[@"incorrectDateArray"] = incorrectDateArray;
-            iphoneApp[@"incorrectJOLArray"] = incorrectJOLArray;
-            if ([pendQuestion intValue] != -1){
-                [iphoneApp addObject:pendQuestion forKey:@"questionPoolArray"];
-                [iphoneApp saveInBackground];
-            }
-            iphoneApp[@"pendingQuestions"] = questionNumber;
-            [iphoneApp saveInBackground];
-        }
-        else if (correctSize > 0){
+        if (correctSize > 0){
             NSMutableArray *correctDateArray = iphoneApp[@"correctDateArray"];
             NSMutableArray *correctAnswerArray = iphoneApp[@"correctAnswerArray"];
             NSMutableArray *correctJOLArray = iphoneApp[@"correctJOLArray"];
@@ -108,6 +92,24 @@
             [iphoneApp removeObject:questionNumber forKey:@"correctAnswerArray"];
             iphoneApp[@"correctDateArray"] = correctDateArray;
             iphoneApp[@"correctJOLArray"] = correctJOLArray;
+            if ([pendQuestion intValue] != -1){
+                [iphoneApp addObject:pendQuestion forKey:@"questionPoolArray"];
+                [iphoneApp saveInBackground];
+            }
+            iphoneApp[@"pendingQuestions"] = questionNumber;
+            [iphoneApp saveInBackground];
+        }
+        else if (incorrectSize > 0){
+            NSMutableArray *incorrectAnswerArray = iphoneApp[@"incorrectAnswerArray"];
+            NSMutableArray *incorrectDateArray = iphoneApp[@"incorrectDateArray"];
+            NSMutableArray *incorrectJOLArray = iphoneApp[@"incorrectJOLArray"];
+            questionNumber = incorrectAnswerArray[0];
+            NSLog(@"remove %@ from incorrect",questionNumber);
+            [incorrectDateArray removeObjectAtIndex:0];
+            [incorrectJOLArray removeObjectAtIndex:0];
+            [iphoneApp removeObject:questionNumber forKey:@"incorrectAnswerArray"];
+            iphoneApp[@"incorrectDateArray"] = incorrectDateArray;
+            iphoneApp[@"incorrectJOLArray"] = incorrectJOLArray;
             if ([pendQuestion intValue] != -1){
                 [iphoneApp addObject:pendQuestion forKey:@"questionPoolArray"];
                 [iphoneApp saveInBackground];
@@ -131,77 +133,96 @@
                 }
                 iphoneApp[@"pendingQuestions"] = questionNumber;
                 [iphoneApp saveInBackground];
-        }
-        
-        int numberBrackets = 0;
-        for (int i=0;i<[questionArray[[questionNumber integerValue]] length];i++){
-            unichar ch = [questionArray[[questionNumber integerValue]] characterAtIndex:i];
-            //NSLog(@"%C",ch);
-            if (ch == '['){
-                numberBrackets++;
+            }
+            else{
+                NSLog(@"DONE?");
+                questionNumber = pendQuestion;
+                NSLog(@"yes");
             }
         }
-
-        int rndQuestion = (arc4random()%(numberBrackets))+1;
-        numberBrackets = 0;
-        int leftBracketIndex;
-        int rightBracketIndex;
-        for (int i=0;i<[questionArray[[questionNumber integerValue]] length];i++){
-            unichar ch = [questionArray[[questionNumber integerValue]] characterAtIndex:i];
-            if (ch == '['){
-                numberBrackets++;
-                if (numberBrackets == rndQuestion){
-                    leftBracketIndex = i;
+        if ([questionNumber intValue] < 0){
+             NSLog(@"1");
+            [self.answerInputTextfield setEnabled:FALSE];
+             NSLog(@"2");
+            NSString *doneMessage = [NSString stringWithFormat:@"You are done with questions for the day! Please check back tomorrow."];
+            NSString *doneCategory = [NSString stringWithFormat:@"Congrats!"];
+             NSLog(@"3");
+            self.questionTextView.text = doneMessage;
+             NSLog(@"4");
+            self.questionCategoryLabel.text = doneCategory;
+             NSLog(@"doned");
+        }
+        else {
+            int numberBrackets = 0;
+            for (int i=0;i<[questionArray[[questionNumber integerValue]] length];i++){
+                unichar ch = [questionArray[[questionNumber integerValue]] characterAtIndex:i];
+                //NSLog(@"%C",ch);
+                if (ch == '['){
+                    numberBrackets++;
                 }
             }
-            else if (ch == ']'){
-                if (numberBrackets == rndQuestion){
-                    rightBracketIndex = i;
+            
+            int rndQuestion = (arc4random()%(numberBrackets))+1;
+            numberBrackets = 0;
+            int leftBracketIndex;
+            int rightBracketIndex;
+            for (int i=0;i<[questionArray[[questionNumber integerValue]] length];i++){
+                unichar ch = [questionArray[[questionNumber integerValue]] characterAtIndex:i];
+                if (ch == '['){
+                    numberBrackets++;
+                    if (numberBrackets == rndQuestion){
+                        leftBracketIndex = i;
+                    }
+                }
+                else if (ch == ']'){
+                    if (numberBrackets == rndQuestion){
+                        rightBracketIndex = i;
+                    }
                 }
             }
-        }
-        
-        wholeQuestion = questionArray[[questionNumber integerValue]];
-        answer = [questionArray[[questionNumber integerValue]] substringWithRange:NSMakeRange(leftBracketIndex+1, rightBracketIndex-leftBracketIndex-1)];
-        NSLog(answer);
-        question = [questionArray[[questionNumber integerValue]] stringByReplacingCharactersInRange:NSMakeRange(leftBracketIndex, rightBracketIndex-leftBracketIndex+1) withString:@"_______"];
-        
-        for (int i=0;i<[question length];i++){
-            unichar ch = [question characterAtIndex:i];
-            if ((ch == '[') || (ch == ']')){
-                question = [question stringByReplacingCharactersInRange:NSMakeRange(i, 1) withString:@""];
+            
+            wholeQuestion = questionArray[[questionNumber integerValue]];
+            answer = [questionArray[[questionNumber integerValue]] substringWithRange:NSMakeRange(leftBracketIndex+1, rightBracketIndex-leftBracketIndex-1)];
+            NSLog(answer);
+            question = [questionArray[[questionNumber integerValue]] stringByReplacingCharactersInRange:NSMakeRange(leftBracketIndex, rightBracketIndex-leftBracketIndex+1) withString:@"_______"];
+            
+            for (int i=0;i<[question length];i++){
+                unichar ch = [question characterAtIndex:i];
+                if ((ch == '[') || (ch == ']')){
+                    question = [question stringByReplacingCharactersInRange:NSMakeRange(i, 1) withString:@""];
+                }
             }
-        }
-        int leftBracketCounter = 0;
-        int rightBracketCounter = 0;
-        for (int i=0;i<[wholeQuestion length];i++){
-            unichar ch = [wholeQuestion characterAtIndex:i];
-            if (ch == '['){
-                leftBracketCounter++;
-                if (leftBracketCounter != rndQuestion){
+            int leftBracketCounter = 0;
+            int rightBracketCounter = 0;
+            for (int i=0;i<[wholeQuestion length];i++){
+                unichar ch = [wholeQuestion characterAtIndex:i];
+                if (ch == '['){
+                    leftBracketCounter++;
+                    if (leftBracketCounter != rndQuestion){
+                        wholeQuestion = [wholeQuestion stringByReplacingCharactersInRange:NSMakeRange(i, 1) withString:@""];
+                    }
+                }
+                if (ch == ']'){
+                    rightBracketCounter++;
+                    if (rightBracketCounter != rndQuestion){
+                        wholeQuestion = [wholeQuestion stringByReplacingCharactersInRange:NSMakeRange(i, 1) withString:@""];
+                    }
+                }
+            }
+            for (int i=0;i<[wholeQuestion length];i++){
+                unichar ch = [wholeQuestion characterAtIndex:i];
+                if (ch == '['){
+                    answerBoldLeft = [NSNumber numberWithInt:i];
+                    wholeQuestion = [wholeQuestion stringByReplacingCharactersInRange:NSMakeRange(i, 1) withString:@""];
+                }
+                if (ch == ']'){
+                    answerBoldRight = [NSNumber numberWithInt:i];
                     wholeQuestion = [wholeQuestion stringByReplacingCharactersInRange:NSMakeRange(i, 1) withString:@""];
                 }
             }
-            if (ch == ']'){
-                rightBracketCounter++;
-                if (rightBracketCounter != rndQuestion){
-                    wholeQuestion = [wholeQuestion stringByReplacingCharactersInRange:NSMakeRange(i, 1) withString:@""];
-                }
-            }
+            self.questionTextView.text = question;
+            self.questionCategoryLabel.text = questionCategoryArray[[questionNumber integerValue]];
         }
-        for (int i=0;i<[wholeQuestion length];i++){
-            unichar ch = [wholeQuestion characterAtIndex:i];
-            if (ch == '['){
-                answerBoldLeft = [NSNumber numberWithInt:i];
-                wholeQuestion = [wholeQuestion stringByReplacingCharactersInRange:NSMakeRange(i, 1) withString:@""];
-            }
-            if (ch == ']'){
-                answerBoldRight = [NSNumber numberWithInt:i];
-                wholeQuestion = [wholeQuestion stringByReplacingCharactersInRange:NSMakeRange(i, 1) withString:@""];
-            }
-        }
-        self.questionTextView.text = question;
-        self.questionCategoryLabel.text = questionCategoryArray[[questionNumber integerValue]];
     }];
 }
 
@@ -212,8 +233,10 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     userAnswer = [self.answerInputTextfield.text lowercaseString];
+    answer = [answer stringByReplacingOccurrencesOfString:@"'" withString:@""];
+    
     [self.view endEditing:YES];
-    if ([[self.answerInputTextfield.text lowercaseString] isEqualToString:[answer lowercaseString]]){
+    if ([[[self.answerInputTextfield.text lowercaseString] stringByReplacingOccurrencesOfString:@"'" withString:@""] isEqualToString:[answer lowercaseString]]){
         gotAnswerCorrect = true;
     }
     else gotAnswerCorrect = false;

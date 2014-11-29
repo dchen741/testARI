@@ -2,6 +2,7 @@
 //  FInishViewController.m
 //  iphoneQuiz
 //
+//  Modified by Dennis Chen throughout 2014
 //  Created by Ivan Seto on 7/22/14.
 //  Copyright (c) 2014 Ivan Seto. All rights reserved.
 //
