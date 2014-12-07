@@ -36,7 +36,6 @@
         NSCalendar* calendar = [NSCalendar currentCalendar];
         NSDateComponents* components = [calendar components:flags fromDate:estToday];
         estToday = [calendar dateFromComponents:components];
-        estToday = [estToday dateByAddingTimeInterval:-60*60*5];
         NSLog(@"today %@",estToday);
         iphoneApp[@"pendingQuestions"] = @-1;
         [iphoneApp saveInBackground];
@@ -178,7 +177,7 @@
             int correctSize=0;
             for (int i=0;i<[correctDateArray count];i++){
                 NSDate *threeDaysAhead = correctDateArray[i];
-                threeDaysAhead = [threeDaysAhead dateByAddingTimeInterval:(60*60*24*3)];
+                threeDaysAhead = [threeDaysAhead dateByAddingTimeInterval:(60*60*24*4)];
                 //if threeDaysAhead is after today
                 if ([threeDaysAhead compare:estToday] == NSOrderedAscending){
                     correctSize++;

@@ -39,7 +39,7 @@
     NSCalendar* calendar = [NSCalendar currentCalendar];
     NSDateComponents* components = [calendar components:flags fromDate:estToday];
     estToday = [calendar dateFromComponents:components];
-    estToday = [estToday dateByAddingTimeInterval:(-60*60*5)+1];
+    estToday = [estToday dateByAddingTimeInterval:60*30];
     NSString *questionString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"questionsBeta3" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
     NSString *questionCategory = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"categoriesBeta3" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
     NSArray * questionArray = [questionString componentsSeparatedByString:@"\n"];
@@ -64,23 +64,21 @@
             //if oneDayAhead is after today
             if ([oneDayAhead compare:estToday] == NSOrderedAscending){
                 incorrectSize++;
-                NSLog(@"onedayahead %@",oneDayAhead);
             }
         }
         
         int correctSize=0;
         for (int i=0;i<[correctDateArray count];i++){
             NSDate *threeDaysAhead = correctDateArray[i];
-            threeDaysAhead = [threeDaysAhead dateByAddingTimeInterval:(60*60*24*3)];
+            threeDaysAhead = [threeDaysAhead dateByAddingTimeInterval:(60*60*24*4)];
             //if threeDaysAhead is after today
             if ([threeDaysAhead compare:estToday] == NSOrderedAscending){
                 correctSize++;
-                NSLog(@"3dayahead %@",threeDaysAhead);
             }
         }
         NSLog(@"Today is the date: %@",estToday);
-        [NSThread sleepForTimeInterval:.5];
         NSNumber *pendQuestion = iphoneApp[@"pendingQuestions"];
+        [NSThread sleepForTimeInterval:.5];
         if (correctSize > 0){
             NSMutableArray *correctDateArray = iphoneApp[@"correctDateArray"];
             NSMutableArray *correctAnswerArray = iphoneApp[@"correctAnswerArray"];
@@ -141,16 +139,14 @@
             }
         }
         if ([questionNumber intValue] < 0){
-             NSLog(@"1");
             [self.answerInputTextfield setEnabled:FALSE];
-             NSLog(@"2");
             NSString *doneMessage = [NSString stringWithFormat:@"You are done with questions for the day! Please check back tomorrow."];
             NSString *doneCategory = [NSString stringWithFormat:@"Congrats!"];
-             NSLog(@"3");
             self.questionTextView.text = doneMessage;
-             NSLog(@"4");
             self.questionCategoryLabel.text = doneCategory;
-             NSLog(@"doned");
+            NSInteger numberOfBadges = [UIApplication sharedApplication].applicationIconBadgeNumber;
+            numberOfBadges = 0;
+            [[UIApplication sharedApplication] setApplicationIconBadgeNumber:numberOfBadges];
         }
         else {
             int numberBrackets = 0;

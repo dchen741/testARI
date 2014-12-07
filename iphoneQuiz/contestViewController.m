@@ -30,8 +30,11 @@
     PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
     [query getObjectInBackgroundWithId:appDelegate.rowID block:^(PFObject *iphoneApp, NSError *error) {
         self.questionNumber = iphoneApp[@"pendingQuestions"];
-        NSDate *estToday = [[NSDate date] dateByAddingTimeInterval:-60*60*5];
-        NSLog(@"today %@",estToday);
+        NSDate *estToday = [NSDate date];
+        unsigned int flags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+        NSCalendar* calendar = [NSCalendar currentCalendar];
+        NSDateComponents* components = [calendar components:flags fromDate:estToday];
+        estToday = [calendar dateFromComponents:components];
         iphoneApp[@"pendingQuestions"] = @-1;
         [iphoneApp saveInBackground];
         [NSThread sleepForTimeInterval:1];

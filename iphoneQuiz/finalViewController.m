@@ -26,6 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSInteger numberOfBadges = [UIApplication sharedApplication].applicationIconBadgeNumber;
+    numberOfBadges = 0;
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:numberOfBadges];
     // Do any additional setup after loading the view.
 }
 
