@@ -39,7 +39,6 @@
     NSCalendar* calendar = [NSCalendar currentCalendar];
     NSDateComponents* components = [calendar components:flags fromDate:estToday];
     estToday = [calendar dateFromComponents:components];
-    estToday = [estToday dateByAddingTimeInterval:60*30];
     NSString *questionString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"questionsBeta3" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
     NSString *questionCategory = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"categoriesBeta3" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
     NSArray * questionArray = [questionString componentsSeparatedByString:@"\n"];
@@ -62,7 +61,7 @@
             NSDate *oneDayAhead = incorrectDateArray[i];
             oneDayAhead = [oneDayAhead dateByAddingTimeInterval:60*60*24];
             //if oneDayAhead is after today
-            if ([oneDayAhead compare:estToday] == NSOrderedAscending){
+            if (([oneDayAhead compare:estToday] == NSOrderedSame) || ([oneDayAhead compare:estToday] == NSOrderedAscending)){
                 incorrectSize++;
             }
         }
@@ -72,9 +71,10 @@
             NSDate *threeDaysAhead = correctDateArray[i];
             threeDaysAhead = [threeDaysAhead dateByAddingTimeInterval:(60*60*24*4)];
             //if threeDaysAhead is after today
-            if ([threeDaysAhead compare:estToday] == NSOrderedAscending){
+            if (([threeDaysAhead compare:estToday] == NSOrderedSame) || ([threeDaysAhead compare:estToday] == NSOrderedAscending)){
                 correctSize++;
             }
+            NSLog(@"Correct size: %d", correctSize);
         }
         NSLog(@"Today is the date: %@",estToday);
         NSNumber *pendQuestion = iphoneApp[@"pendingQuestions"];

@@ -393,9 +393,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Congratulations, you have completed your 5 assigned questions for today! If you'd like to do more, click below." translatesAutoresizingMaskIntoConstraints="NO" id="NCy-Ga-xu4">
+                                <rect key="frame" x="40" y="151" width="240" height="98"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-9e-tBn">
-                                <rect key="frame" x="129" y="202" width="62" height="30"/>
-                                <state key="normal" title="Continue">
+                                <rect key="frame" x="108" y="269" width="105" height="30"/>
+                                <state key="normal" title="I WANT MORE!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -422,8 +428,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="eZk-Py-97P"/>
         <segue reference="iwG-BM-Tox"/>
-        <segue reference="jPO-nT-33g"/>
         <segue reference="FD6-zY-9Vu"/>
+        <segue reference="LAd-Be-1FJ"/>
         <segue reference="wQQ-bl-YKa"/>
     </inferredMetricsTieBreakers>
 </document>

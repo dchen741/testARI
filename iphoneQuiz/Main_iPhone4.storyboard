@@ -398,14 +398,20 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-9e-tBn">
-                                <rect key="frame" x="129" y="202" width="62" height="30"/>
-                                <state key="normal" title="Continue">
+                                <rect key="frame" x="108" y="269" width="105" height="30"/>
+                                <state key="normal" title="I WANT MORE!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="Awl-4c-8Ox" kind="modal" id="LAd-Be-1FJ"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Congratulations, you have completed your 5 assigned questions for today! If you'd like to do more, click below." translatesAutoresizingMaskIntoConstraints="NO" id="jwG-gN-qcP">
+                                <rect key="frame" x="40" y="133" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -425,10 +431,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hA7-8g-cPV"/>
-        <segue reference="ow2-fT-hXJ"/>
-        <segue reference="eZk-Py-97P"/>
+        <segue reference="LAd-Be-1FJ"/>
         <segue reference="KI2-vS-1Kh"/>
+        <segue reference="hA7-8g-cPV"/>
+        <segue reference="eZk-Py-97P"/>
         <segue reference="wQQ-bl-YKa"/>
     </inferredMetricsTieBreakers>
 </document>

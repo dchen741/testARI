@@ -1,16 +1,16 @@
-questionsBeta3.txt
-The biceps tendon inserts on the [radial] tuberosity.
-The induction agent [etomidate] has been associated with [adrenal] insufficiency.
-The liver contains large amounts of monoamine oxidase which deactivates [serotonin], therefore in order to present with carcinoid syndrome  patients must have metastatic disease in either the liver or retroperitoneum
-[Intraductal] papilloma is the most common cause of bloody discharge from the nipple.
-The most common benign cardiac tumor is a [myxoma].
+questionsBeta5.txt
+ The [Cushing] response is characterized by the triad of  [hypertension], [bradycardia] and [decreased] respiratory rate.
+Vitamin [C] is required for the hydroxylation process.
+[Lisfranc]'s amputation is the orthopedic procedure characterized by the partial foot amputation through the tarsometatarsal joint.
+The most common metastasis to the small bowel is from [melanoma].
+An [Amyand]’s hernia contains the appendix.
+The borders of [Calot]'s Triangle are the [cystic] duct, [common] hepatic duct, and the inferior border of the [liver].
+Produced by the small intestine, [enterokinase] activates [trypsin].
+A patient presenting with a [Jefferson] fracture of the first cervical vertebra experienced compression of the neck.
+A [Krukenberg] tumor is indicative of ovarian metastases of [gastric] cancer.
+The treatment of esophageal [leiomyoma] is [enucleation] through a thoracotomy.
+The most common location for an ectopic parathyroid gland is the [thymus].
+[Norepinephrine] is the vasopressor of first choice for septic shock.
+The most common cause of lower gastrointestinal bleeding in adults is [diverticulosis].
 Patients with relative protein [C] deficiency are especially vulnerable to warfarin-induced skin necrosis.
-[E. coli] is the most common [aerobe] in the colon.
-[Diltiazem] is the preferred calcium channel blocker in the treatment of rapid atrial fibrillation.
-MEN-[I] is associated with a mutation in the [MENIN] gene
-For a patient with symptomatic GERD, advanced disease (permanently failed LES), normal esophageal body function, and adequate esophageal length, the ideal procedure is [Nissen fundoplication].
-[Virchow]'s node, or the enlargment of the left supraclavicular lymph node is used to diagnose various abdominal malignancies, especially stomach cancer.
-A [Chance] fracture is the horizontal fracture of the vertebral body caused by hyperflexion of the spine.
-[Chief] cells stimulate the secretion of inactive form of [pepsin] in the stomach.
-An amebic abscess is best treated with the antibiotic [metronidazole].
-The hernia of [Morgagni] occurs between the xiphoid process and the costochondral attachments of the diaphragm.
+The intra-aortic balloon pump should deflate on the [P] wave and inflate on the [T] wave.

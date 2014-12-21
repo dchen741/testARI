@@ -26,6 +26,7 @@
 }
 
 - (void)nextViewFunction:(id)sender{
+    NSLog(@"AKSLFJLKSJFLKSDJFKLSDJFLKSJFSLKDJFKLSJFLSKD WORK PLZ");
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     PFQuery *query = [PFQuery queryWithClassName:@"iPhoneQuizApp"];
     [query getObjectInBackgroundWithId:appDelegate.rowID block:^(PFObject *iphoneApp, NSError *error) {
